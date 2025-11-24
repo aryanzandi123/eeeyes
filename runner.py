@@ -53,12 +53,12 @@ try:
 except ImportError:
     VALIDATOR_AVAILABLE = False
 
-# Import claim fact checker (optional)
+# Import indirect chain linker (optional)
 try:
-    from utils.claim_fact_checker import fact_check_json
-    FACT_CHECKER_AVAILABLE = True
+    from utils.indirect_chain_linker import process_indirect_chain
+    INDIRECT_LINKER_AVAILABLE = True
 except ImportError:
-    FACT_CHECKER_AVAILABLE = False
+    INDIRECT_LINKER_AVAILABLE = False
 
 # Import step logger for comprehensive logging
 try:
@@ -1652,8 +1652,8 @@ def run_full_job(
     if not skip_deduplicator and DEDUPLICATOR_AVAILABLE and deduplicate_payload is not None and api_key:
         post_steps += 1
 
-    # Fact-checking (conditional)
-    if not skip_fact_checking and FACT_CHECKER_AVAILABLE and api_key:
+    # Indirect Chain Linking (conditional)
+    if INDIRECT_LINKER_AVAILABLE and api_key:
         post_steps += 1
 
     # Schema validation - post-finalization (conditional)
@@ -1800,6 +1800,7 @@ def run_full_job(
                 deduped_payload,
                 api_key,
                 verbose=False,
+                batch_size=1,  # Force single-item batch for deep forensic audit
                 step_logger=step_logger
             )
 
@@ -1816,37 +1817,24 @@ def run_full_job(
                 verbose=False
             )
 
-        # --- STAGE 6: Claim fact-checker ---
-        if not skip_fact_checking and FACT_CHECKER_AVAILABLE and api_key:
+        # --- STAGE 6: Indirect Chain Linking ---
+        if INDIRECT_LINKER_AVAILABLE and api_key:
             current_step += 1
             update_status(
-                text="Fact-checking claims with Google Search...",
+                text="Linking indirect chains...",
                 current_step=current_step,
                 total_steps=total_steps
             )
-            fact_checked_payload = fact_check_json(
-                validated_payload,
+            # Update ctx_json with linked interactions
+            ctx_json = process_indirect_chain(
+                validated_payload.get("ctx_json", {}),
                 api_key,
                 verbose=False
             )
+            validated_payload["ctx_json"] = ctx_json
+            linked_payload = validated_payload
         else:
-            fact_checked_payload = validated_payload
-
-        # --- STAGE 6B: Second deduplication pass (catch fact-checker-created dupes) ---
-        if not skip_fact_checking and DEDUPLICATOR_AVAILABLE and api_key and FACT_CHECKER_AVAILABLE:
-            current_step += 1
-            update_status(
-                text="Running final deduplication pass...",
-                current_step=current_step,
-                total_steps=total_steps
-            )
-            final_deduplicated_payload = deduplicate_payload(
-                fact_checked_payload,
-                api_key,
-                verbose=False
-            )
-        else:
-            final_deduplicated_payload = fact_checked_payload
+            linked_payload = validated_payload
 
         # --- STAGE 7: Update PMIDs (finalize citations and prune empty entries) ---
         if PMID_UPDATER_AVAILABLE and update_payload_pmids is not None:
@@ -1857,11 +1845,11 @@ def run_full_job(
                 total_steps=total_steps
             )
             final_payload = update_payload_pmids(
-                final_deduplicated_payload,
+                linked_payload,
                 verbose=False
             )
         else:
-            final_payload = final_deduplicated_payload
+            final_payload = linked_payload
 
 # --- STAGE 7.5: Validate arrows, directions, effects + extract direct mediator links ---
         if ARROW_VALIDATOR_AVAILABLE and validate_arrows_for_payload is not None and api_key:
@@ -2145,8 +2133,8 @@ def run_requery_job(
     if not skip_deduplicator and DEDUPLICATOR_AVAILABLE and deduplicate_payload is not None:
         post_steps += 1
 
-    # Fact-checking (conditional)
-    if not skip_fact_checking and FACT_CHECKER_AVAILABLE:
+    # Indirect Chain Linking (conditional)
+    if INDIRECT_LINKER_AVAILABLE:
         post_steps += 1
 
     # Final stages (ALWAYS run)
@@ -2387,7 +2375,8 @@ def run_requery_job(
             validated_new_payload = validate_and_enrich_evidence(
                 new_only_payload,
                 api_key,
-                verbose=False
+                verbose=False,
+                batch_size=1  # Force single-item batch for deep forensic audit
             )
 
         # --- STAGE 2.12: Generate interaction metadata for new data ---
@@ -2434,20 +2423,19 @@ def run_requery_job(
                 verbose=False
             )
 
-        # --- STAGE 2.5: Fact-check ONLY new data ---
-        if not skip_fact_checking and FACT_CHECKER_AVAILABLE:
+        # --- STAGE 2.5: Indirect Chain Linking for new data ---
+        if INDIRECT_LINKER_AVAILABLE:
             current_step += 1
             update_status(
-                text="Fact-checking new claims...",
+                text="Linking indirect chains...",
                 current_step=current_step,
                 total_steps=total_steps
             )
 
-            validated_new_payload = fact_check_json(
-                validated_new_payload,
-                api_key,
-                verbose=False
-            )
+            # Process new data
+            new_ctx = validated_new_payload.get("ctx_json", {})
+            new_ctx = process_indirect_chain(new_ctx, api_key, verbose=False)
+            validated_new_payload["ctx_json"] = new_ctx
 
         # --- STAGE 3: Merge validated new data with existing ---
         current_step += 1
