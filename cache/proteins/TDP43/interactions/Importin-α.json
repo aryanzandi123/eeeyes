@@ -1,0 +1,74 @@
+{
+  "primary": "Importin-α",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TDP-43 contains a nuclear localization signal (NLS) that is recognized by the Importin-α/β heterodimer, which mediates its transport into the nucleus.",
+  "functions": [
+    {
+      "function": "TDP-43 Nuclear Import",
+      "arrow": "activates",
+      "cellular_process": "Importin-α, as part of the Importin-α/β heterodimer, recognizes and binds to the bipartite nuclear localization signal (NLS) of TDP-43, mediating its active transport from the cytoplasm into the nucleus through the nuclear pore complex.",
+      "effect_description": "This interaction is essential for maintaining the predominantly nuclear localization of TDP-43. Binding of Importin-α to the TDP-43 NLS also has a chaperone-like activity, disrupting the dimerization of TDP-43's N-terminal domain and thereby preventing its aggregation.",
+      "biological_consequence": [
+        "TDP-43 NLS recognition by Importin-α/β → Translocation into nucleus → Maintenance of nuclear TDP-43 pool and function",
+        "Impaired Importin-α/β binding (due to mutations or PTMs in NLS) → Reduced nuclear import & increased cytoplasmic concentration → TDP-43 aggregation → Neurotoxicity"
+      ],
+      "specific_effects": [
+        "The TDP-43 NLS engages Importin-α through a bipartite mechanism involving both major and minor binding sites.",
+        "Binding of Importin-α sterically hinders the dimerization interface of the TDP-43 N-terminal domain, antagonizing its aggregation.",
+        "Mutations or post-translational modifications near the NLS can reduce binding affinity for Importin-α, leading to cytoplasmic mislocalization."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Recognition of the TDP-43 nuclear localization signal by importin α1/β",
+          "year": 2022,
+          "pmid": "35767952"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "35767952"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "Importin-α, as part of the Importin-α/β heterodimer, recognizes and binds to the bipartite nuclear localization signal (NLS) of TDP-43, mediating its active transport from the cytoplasm into the nucleus through the nuclear pore complex.",
+  "effect": "This interaction is essential for maintaining the predominantly nuclear localization of TDP-43. Binding of Importin-α to the TDP-43 NLS also has a chaperone-like activity, disrupting the dimerization of TDP-43's N-terminal domain and thereby preventing its aggregation.",
+  "summary": "TDP43 activates Importin-α to modulate tdp-43 nuclear import, ultimately affecting maintenance of nuclear tdp-43 pool and function.",
+  "evidence": [
+    {
+      "paper_title": "Recognition of the TDP-43 nuclear localization signal by importin α1/β",
+      "year": 2022
+    }
+  ],
+  "interaction_effect": "binds",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 <--binds-- Importin-α:",
+  "protein_a": "TDP43",
+  "protein_b": "Importin-α",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.336405Z",
+  "last_updated": "2025-11-24T02:46:00.336405Z"
+}

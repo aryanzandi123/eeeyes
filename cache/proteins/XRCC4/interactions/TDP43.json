@@ -1,0 +1,79 @@
+{
+  "primary": "TDP43",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TDP-43 is a key component of the non-homologous end joining (NHEJ) pathway for DNA double-strand break repair. It acts as a scaffold to recruit the XRCC4/DNA Ligase 4 complex to sites of DNA damage.",
+  "functions": [
+    {
+      "function": "DNA Double-Strand Break Repair",
+      "arrow": "activates",
+      "cellular_process": "TDP-43 is a critical component of the non-homologous end joining (NHEJ) pathway for repairing DNA double-strand breaks (DSBs). It is recruited to sites of DNA damage.",
+      "effect_description": "TDP-43 acts as a scaffold to recruit the XRCC4/DNA Ligase 4 complex to the site of the break. This recruitment is essential for the final, rate-limiting step of ligating the broken DNA ends. Loss of nuclear TDP-43 impairs this process, leading to the accumulation of DNA damage.",
+      "biological_consequence": [
+        "DNA double-strand break → TDP-43 recruitment to damage site → Scaffolding and recruitment of XRCC4/Ligase 4 complex → Efficient NHEJ repair → Maintenance of genomic stability"
+      ],
+      "specific_effects": [
+        "Loss of nuclear TDP-43 function impairs the recruitment of the XRCC4-DNA ligase 4 complex to DSB sites.",
+        "TDP-43 depletion leads to reduced NHEJ efficiency and an accumulation of unrepaired DSBs.",
+        "In ALS, TDP-43 mislocalization may trap the XRCC4/Ligase 4 complex in the cytoplasm, preventing its nuclear function."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Motor neuron disease-associated loss of nuclear TDP-43 is linked to DNA double-strand break repair defects",
+          "year": 2019,
+          "pmid": "30770445"
+        },
+        {
+          "paper_title": "A Commentary on TDP-43 and DNA Damage Response in Amyotrophic Lateral Sclerosis.",
+          "year": 2019,
+          "pmid": "31656396"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "30770445",
+        "31656396"
+      ]
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "TDP-43 is a critical component of the non-homologous end joining (NHEJ) pathway for repairing DNA double-strand breaks (DSBs). It is recruited to sites of DNA damage.",
+  "effect": "TDP-43 acts as a scaffold to recruit the XRCC4/DNA Ligase 4 complex to the site of the break. This recruitment is essential for the final, rate-limiting step of ligating the broken DNA ends. Loss of nuclear TDP-43 impairs this process, leading to the accumulation of DNA damage.",
+  "summary": "TDP43 activates XRCC4 to modulate dna double-strand break repair, ultimately affecting maintenance of genomic stability.",
+  "evidence": [
+    {
+      "paper_title": "Motor neuron disease-associated loss of nuclear TDP-43 is linked to DNA double-strand break repair defects",
+      "year": 2019
+    },
+    {
+      "paper_title": "A Commentary on TDP-43 and DNA Damage Response in Amyotrophic Lateral Sclerosis.",
+      "year": 2019
+    },
+    {
+      "paper_title": "TDP-43 facilitates recruitment and activity of the NHEJ ligation",
+      "year": null
+    }
+  ],
+  "arrow_notation": "TDP43 --activates--> XRCC4:",
+  "protein_a": "XRCC4",
+  "protein_b": "TDP43",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.372794Z",
+  "last_updated": "2025-11-24T02:46:00.372794Z"
+}

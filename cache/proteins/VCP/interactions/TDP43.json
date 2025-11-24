@@ -1,0 +1,129 @@
+{
+  "primary": "TDP43",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Valosin-containing protein (VCP) is an autophagy regulator that co-localizes with TDP-43, p62, and ubiquitin in inclusions within motor neurons of ALS patients.",
+  "functions": [
+    {
+      "function": "TDP-43 Aggregate Clearance",
+      "arrow": "activates",
+      "cellular_process": "VCP is an AAA-ATPase that functions as a segregase, extracting ubiquitinated proteins, including TDP-43, from larger complexes or aggregates. This action is critical for preparing the aggregates for degradation by either the proteasome or autophagy.",
+      "effect_description": "VCP facilitates the clearance of both nuclear and cytoplasmic TDP-43 aggregates. Pathogenic mutations in VCP or inhibition of its ATPase activity impair this clearance, leading to the accumulation of insoluble, ubiquitinated TDP-43.",
+      "biological_consequence": [
+        "TDP-43 aggregates form → VCP extracts ubiquitinated TDP-43 → TDP-43 is delivered to proteasome or autophagy pathways → Aggregate clearance and restored proteostasis"
+      ],
+      "specific_effects": [
+        "Mutations in VCP cause Multisystem Proteinopathy (MSP), which is characterized by TDP-43 inclusions.",
+        "Loss of VCP function leads to decreased clearance of insoluble intranuclear TDP-43.",
+        "Pharmacological activation of VCP can enhance the clearance of intranuclear TDP-43 aggregates."
+      ],
+      "evidence": [
+        {
+          "paper_title": "VCP activator reverses nuclear proteostasis defects and enhances TDP-43 aggregate clearance in multisystem proteinopathy models",
+          "year": 2024,
+          "pmid": "38787785"
+        },
+        {
+          "paper_title": "Cdc48/VCP and Endocytosis Regulate TDP-43 and FUS Toxicity and Turnover",
+          "year": 2018,
+          "pmid": "31767634"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "38787785",
+        "31767634"
+      ],
+      "function_effect": "activation"
+    },
+    {
+      "function": "Autophagosome Maturation",
+      "arrow": "activates",
+      "cellular_process": "VCP is required for multiple stages of autophagy, including the fusion of autophagosomes with lysosomes to form functional autolysosomes. This maturation step is essential for the final degradation of autophagic cargo.",
+      "effect_description": "Loss of VCP function or expression of disease-mutant VCP leads to the accumulation of immature, non-degradative autophagosomes. This blocks the autophagic flux and prevents the clearance of substrates like aggregated TDP-43.",
+      "biological_consequence": [
+        "VCP dysfunction → Impaired autophagosome-lysosome fusion → Accumulation of autophagosomes and protein aggregates (including TDP-43) → Cellular toxicity and neurodegeneration"
+      ],
+      "specific_effects": [
+        "Inhibition of autophagy recapitulates the cytoplasmic TDP-43 accumulation seen in cells with VCP mutations.",
+        "VCP regulates autophagy at multiple steps, including initiation, cargo routing, and maturation."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+          "year": 2009,
+          "pmid": "20008565"
+        },
+        {
+          "paper_title": "Valosin Containing Protein (VCP): A Multistep Regulator of Autophagy",
+          "year": 2020,
+          "pmid": "35216053"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "20008565",
+        "35216053"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "VCP is an AAA-ATPase that functions as a segregase, extracting ubiquitinated proteins, including TDP-43, from larger complexes or aggregates. This action is critical for preparing the aggregates for degradation by either the proteasome or autophagy. VCP is required for multiple stages of autophagy, including the fusion of autophagosomes with lysosomes to form functional autolysosomes. This maturation step is essential for the final degradation of autophagic cargo.",
+  "effect": "VCP facilitates the clearance of both nuclear and cytoplasmic TDP-43 aggregates. Pathogenic mutations in VCP or inhibition of its ATPase activity impair this clearance, leading to the accumulation of insoluble, ubiquitinated TDP-43.; Loss of VCP function or expression of disease-mutant VCP leads to the accumulation of immature, non-degradative autophagosomes. This blocks the autophagic flux and prevents the clearance of substrates like aggregated TDP-43.",
+  "summary": "TDP43 activates VCP to regulate tdp-43 aggregate clearance and autophagosome maturation, ultimately affecting aggregate clearance and restored proteostasis.",
+  "evidence": [
+    {
+      "paper_title": "VCP activator reverses nuclear proteostasis defects and enhances TDP-43 aggregate clearance in multisystem proteinopathy models",
+      "year": 2024
+    },
+    {
+      "paper_title": "Cdc48/VCP and Endocytosis Regulate TDP-43 and FUS Toxicity and Turnover",
+      "year": 2018
+    },
+    {
+      "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+      "year": 2009
+    },
+    {
+      "paper_title": "Valosin Containing Protein (VCP): A Multistep Regulator of Autophagy",
+      "year": 2020
+    }
+  ],
+  "interaction_effect": "binds",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 5
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 <--binds-- VCP:",
+  "protein_a": "VCP",
+  "protein_b": "TDP43",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.311104Z",
+  "last_updated": "2025-11-24T02:46:00.311104Z"
+}

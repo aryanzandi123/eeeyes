@@ -1,0 +1,76 @@
+{
+  "primary": "SQSTM1/p62",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "The autophagy receptor p62/SQSTM1 directly co-localizes with pathological TDP-43 aggregates in patient neurons, indicating it binds to ubiquitinated TDP-43 to facilitate its clearance.",
+  "functions": [
+    {
+      "function": "Autophagic Clearance of TDP-43 Aggregates",
+      "arrow": "activates",
+      "cellular_process": "SQSTM1/p62 is an autophagy receptor that recognizes and binds to ubiquitinated protein aggregates. It co-localizes with pathological TDP-43 inclusions in patient neurons.",
+      "effect_description": "p62 acts as a bridge, linking ubiquitinated TDP-43 aggregates to the autophagosome machinery (via its interaction with LC3), thereby targeting the aggregates for degradation by autophagy (a process known as aggrephagy).",
+      "biological_consequence": [
+        "TDP-43 aggregation → Ubiquitination of TDP-43 → p62 recognition and binding → Recruitment of autophagosome → Lysosomal degradation of TDP-43 aggregates"
+      ],
+      "specific_effects": [
+        "Inclusions in IBMPFD (caused by VCP mutations) and ALS are positive for ubiquitin, p62, and TDP-43.",
+        "Impaired autophagy leads to the accumulation of both p62 and TDP-43."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+          "year": 2009,
+          "pmid": "20008565"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "20008565"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "SQSTM1/p62 is an autophagy receptor that recognizes and binds to ubiquitinated protein aggregates. It co-localizes with pathological TDP-43 inclusions in patient neurons.",
+  "effect": "p62 acts as a bridge, linking ubiquitinated TDP-43 aggregates to the autophagosome machinery (via its interaction with LC3), thereby targeting the aggregates for degradation by autophagy (a process known as aggrephagy).",
+  "summary": "TDP43 activates SQSTM1/p62 to modulate autophagic clearance of tdp-43 aggregates, ultimately affecting lysosomal degradation of tdp-43 aggregates.",
+  "evidence": [
+    {
+      "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+      "year": 2009
+    },
+    {
+      "paper_title": "p62/SQSTM1 is a promising target for the treatment of ALS",
+      "year": 2021
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 <--binds-- SQSTM1/p62:",
+  "protein_a": "TDP43",
+  "protein_b": "SQSTM1/p62",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.308726Z",
+  "last_updated": "2025-11-24T02:46:00.308726Z"
+}

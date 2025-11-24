@@ -1,0 +1,3082 @@
+{
+  "ctx_json": {
+    "main": "TDP43",
+    "interactors": [
+      {
+        "primary": "hnRNPA1",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "The C-terminus of TDP-43 directly interacts with several hnRNP proteins, including hnRNPA1. TDP-43 also binds to HNRNPA1 pre-mRNA to modulate its alternative splicing.",
+        "functions": [
+          {
+            "function": "Alternative Splicing",
+            "arrow": "inhibits",
+            "cellular_process": "TDP-43 binds to HNRNPA1 pre-mRNA and modulates its 5' splice site selection. Depletion of nuclear TDP-43 leads to the increased inclusion of a cryptic exon (exon 7B) in the HNRNPA1 transcript.",
+            "effect_description": "Loss of nuclear TDP-43 function alters the splicing of HNRNPA1, producing an aggregation-prone isoform called hnRNP A1B, which contains an extended prion-like domain.",
+            "biological_consequence": [
+              "Loss of TDP-43 function → Increased hnRNP A1B isoform production → hnRNP A1B aggregation → Formation of cytoplasmic inclusions distinct from TDP-43 aggregates → Neuronal toxicity"
+            ],
+            "specific_effects": [
+              "TDP-43 and hnRNPA1 co-regulate the splicing of numerous other transcripts.",
+              "The hnRNP A1B isoform shows a greater propensity for fibrillization and is toxic to cells.",
+              "ALS patients with TDP-43 pathology exhibit cytoplasmic accumulation of hnRNP A1B in neurons."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 regulates the alternative splicing of hnRNP A1 to yield an aggregation-prone variant in amyotrophic lateral sclerosis",
+                "year": 2018,
+                "pmid": "29562314"
+              },
+              {
+                "paper_title": "TDP-43 mutations increase HNRNP A1-7B through gain of splicing function",
+                "year": 2018,
+                "pmid": "30364928"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "29562314",
+              "30364928"
+            ]
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates",
+            "inhibits"
+          ]
+        },
+        "mechanism": "TDP-43 binds to HNRNPA1 pre-mRNA and modulates its 5' splice site selection. Depletion of nuclear TDP-43 leads to the increased inclusion of a cryptic exon (exon 7B) in the HNRNPA1 transcript. hnRNPA1 is a component of stress granules and interacts with TDP-43 within these structures. The interaction is facilitated by their respective low-complexity domains.",
+        "effect": "Loss of nuclear TDP-43 function alters the splicing of HNRNPA1, producing an aggregation-prone isoform called hnRNP A1B, which contains an extended prion-like domain.; The interaction between TDP-43 and hnRNPA1 contributes to the assembly and dynamics of stress granules, which may act as sites for the initiation of pathological aggregation.",
+        "summary": "TDP43 regulates hnRNPA1 to regulate alternative splicing and stress granule assembly, ultimately affecting neuronal toxicity.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 regulates the alternative splicing of hnRNP A1 to yield an aggregation-prone variant in amyotrophic lateral sclerosis",
+            "year": 2018
+          },
+          {
+            "paper_title": "TDP-43 mutations increase HNRNP A1-7B through gain of splicing function",
+            "year": 2018
+          },
+          {
+            "paper_title": "Stress Granules: A Core Keystone of ALS/FTD Pathogenesis",
+            "year": 2021
+          },
+          {
+            "paper_title": "The role of hnRNPA1 in the pathogenesis of amyotrophic lateral sclerosis",
+            "year": 2020
+          }
+        ],
+        "arrow_notation": "TDP43 --regulates--> hnRNPA1:"
+      },
+      {
+        "primary": "hnRNPA2/B1",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43's C-terminal glycine-rich region has been shown to directly mediate interaction with hnRNPA2/B1.",
+        "functions": [
+          {
+            "function": "Alternative Splicing",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 and hnRNPA2/B1 are both components of the spliceosome and interact to co-regulate the alternative splicing of target pre-mRNAs.",
+            "effect_description": "The cooperative binding of TDP-43 and hnRNPA2/B1 to pre-mRNAs influences splice site selection, affecting the final protein isoforms produced.",
+            "biological_consequence": [
+              "TDP-43/hnRNPA2 interaction → Co-regulation of splicing targets (e.g., CFTR exon 9) → Altered protein isoform ratios → Disrupted cellular function"
+            ],
+            "specific_effects": [
+              "Knockdown of hnRNPA2 inhibits the exclusion of CFTR exon 9, a process also modulated by TDP-43."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 and FUS/TLS: emerging roles in RNA processing and neurodegeneration",
+                "year": 2010,
+                "pmid": "20400460"
+              },
+              {
+                "paper_title": "Abnormal Splicing Events due to Loss of Nuclear Function of TDP-43: Pathophysiology and Perspectives",
+                "year": 2024,
+                "pmid": "39114608"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "20400460",
+              "39114608"
+            ],
+            "function_effect": "activation"
+          },
+          {
+            "function": "Stress Granule Localization",
+            "arrow": "activates",
+            "cellular_process": "Following cellular stress, both TDP-43 and hnRNPA2 are recruited to and become components of stress granules.",
+            "effect_description": "This co-localization suggests a functional interaction within stress granules, contributing to the cellular stress response and RNA triage.",
+            "biological_consequence": [
+              "Oxidative stress → Recruitment of TDP-43 and hnRNPA2 to stress granules → Sequestration of RNA and proteins → Modulation of stress response"
+            ],
+            "specific_effects": [
+              "TDP-43 interacts with hnRNPA2 via its C-terminal glycine-rich domain."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TAR DNA-binding protein 43 (TDP-43) regulates stress granule dynamics via differential regulation of G3BP and TIA-1",
+                "year": 2011,
+                "pmid": "21257637"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "21257637"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "complex",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 and hnRNPA2/B1 are both components of the spliceosome and interact to co-regulate the alternative splicing of target pre-mRNAs. Following cellular stress, both TDP-43 and hnRNPA2 are recruited to and become components of stress granules.",
+        "effect": "The cooperative binding of TDP-43 and hnRNPA2/B1 to pre-mRNAs influences splice site selection, affecting the final protein isoforms produced.; This co-localization suggests a functional interaction within stress granules, contributing to the cellular stress response and RNA triage.",
+        "summary": "TDP43 activates hnRNPA2/B1 to regulate alternative splicing and stress granule localization, ultimately affecting disrupted cellular function.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 and FUS/TLS: emerging roles in RNA processing and neurodegeneration",
+            "year": 2010
+          },
+          {
+            "paper_title": "Abnormal Splicing Events due to Loss of Nuclear Function of TDP-43: Pathophysiology and Perspectives",
+            "year": 2024
+          },
+          {
+            "paper_title": "TAR DNA-binding protein 43 (TDP-43) regulates stress granule dynamics via differential regulation of G3BP and TIA-1",
+            "year": 2011
+          }
+        ],
+        "interaction_effect": "complex",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--complex--> hnRNPA2/B1:"
+      },
+      {
+        "primary": "FUS",
+        "interaction_type": "complex",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 and FUS are both RNA-binding proteins found in shared complexes, such as with the Drosha microprocessor and within stress granules, indicating a direct or closely associated interaction.",
+        "functions": [
+          {
+            "function": "Stress Granule Dynamics",
+            "arrow": "regulates",
+            "cellular_process": "TDP-43 and FUS are both RNA-binding proteins that are recruited to stress granules upon cellular stress. Their interaction within these granules can influence granule assembly, disassembly, and composition.",
+            "effect_description": "The co-localization and interaction of TDP-43 and FUS in stress granules are thought to be a critical step in the pathogenesis of ALS, as these structures can mature into persistent pathological aggregates.",
+            "biological_consequence": [
+              "Cellular Stress → Co-recruitment to Stress Granules → Altered granule dynamics → Aberrant phase transition → Formation of pathological inclusions"
+            ],
+            "specific_effects": [
+              "ALS-linked mutations in either FUS or TDP-43 can alter stress granule properties.",
+              "Overexpression of TDP-43 or FUS can induce the spontaneous formation of stress granules."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Alterations in stress granule dynamics driven by TDP-43 and FUS: a link to pathological inclusions in ALS?",
+                "year": 2015,
+                "pmid": "26557057"
+              },
+              {
+                "paper_title": "Liquid-Liquid Phase Separation of TDP-43 and FUS in Physiology and Pathology of Neurodegenerative Diseases",
+                "year": 2022,
+                "pmid": "35187086"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "regulates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "26557057",
+              "35187086"
+            ],
+            "function_effect": "regulation"
+          },
+          {
+            "function": "RNA Processing",
+            "arrow": "regulates",
+            "cellular_process": "TDP-43 and FUS are both involved in multiple steps of RNA metabolism, including pre-mRNA splicing and transcriptional regulation. They can bind to distinct but sometimes overlapping sets of RNA targets.",
+            "effect_description": "While they generally regulate different sets of transcripts, their dysfunction can impact common pathways, including those related to neuronal development and cytoskeleton organization.",
+            "biological_consequence": [
+              "Loss of FUS or TDP-43 function → Dysregulation of distinct splicing events → Altered gene expression → Impairment of common neuronal pathways → Neurodegeneration"
+            ],
+            "specific_effects": [
+              "Both proteins are structurally similar to hnRNPs and are components of the spliceosome.",
+              "Dysfunction of either protein can affect the splicing and expression of genes involved in RNA metabolism and neuronal function."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 and FUS/TLS: emerging roles in RNA processing and neurodegeneration",
+                "year": 2010,
+                "pmid": "20400460"
+              },
+              {
+                "paper_title": "From transcriptomic to protein level changes in TDP-43 and FUS loss-of-function cell models",
+                "year": 2016,
+                "pmid": "26514432"
+              },
+              {
+                "paper_title": "TDP-43 and FUS RNA-binding Proteins Bind Distinct Sets of Cytoplasmic Messenger RNAs and Differently Regulate Their Post-transcriptional Fate in Motoneuron-like Cells",
+                "year": 2014,
+                "pmid": "22427648"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "regulates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "20400460",
+              "26514432",
+              "22427648"
+            ],
+            "function_effect": "regulation"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 and FUS are both RNA-binding proteins that are recruited to stress granules upon cellular stress. Their interaction within these granules can influence granule assembly, disassembly, and composition. TDP-43 and FUS are both involved in multiple steps of RNA metabolism, including pre-mRNA splicing and transcriptional regulation. They can bind to distinct but sometimes overlapping sets of RNA targets.",
+        "effect": "The co-localization and interaction of TDP-43 and FUS in stress granules are thought to be a critical step in the pathogenesis of ALS, as these structures can mature into persistent pathological aggregates.; While they generally regulate different sets of transcripts, their dysfunction can impact common pathways, including those related to neuronal development and cytoskeleton organization.",
+        "summary": "TDP43 activates FUS to regulate stress granule dynamics and rna processing, ultimately affecting formation of pathological inclusions.",
+        "evidence": [
+          {
+            "paper_title": "Alterations in stress granule dynamics driven by TDP-43 and FUS: a link to pathological inclusions in ALS?",
+            "year": 2015
+          },
+          {
+            "paper_title": "Liquid-Liquid Phase Separation of TDP-43 and FUS in Physiology and Pathology of Neurodegenerative Diseases",
+            "year": 2022
+          },
+          {
+            "paper_title": "TDP-43 and FUS/TLS: emerging roles in RNA processing and neurodegeneration",
+            "year": 2010
+          },
+          {
+            "paper_title": "From transcriptomic to protein level changes in TDP-43 and FUS loss-of-function cell models",
+            "year": 2016
+          },
+          {
+            "paper_title": "TDP-43 and FUS RNA-binding Proteins Bind Distinct Sets of Cytoplasmic Messenger RNAs and Differently Regulate Their Post-transcriptional Fate in Motoneuron-like Cells",
+            "year": 2014
+          }
+        ],
+        "interaction_effect": "regulation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 5
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--regulates--> FUS:"
+      },
+      {
+        "primary": "Ataxin-2",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Ataxin-2 and TDP-43 physically interact in an RNA-dependent manner, as demonstrated by co-immunoprecipitation. This interaction is mediated through the RNA recognition motif (RRM) of TDP-43.",
+        "functions": [
+          {
+            "function": "Stress Granule Assembly",
+            "arrow": "activates",
+            "cellular_process": "Ataxin-2 is a key component and modulator of stress granules. It facilitates the recruitment of TDP-43 into these structures during cellular stress.",
+            "effect_description": "Ataxin-2 acts as a scaffold within stress granules, promoting the interaction between TDP-43 and other RNA-binding proteins, which can influence TDP-43's transition from a liquid-like to a solid aggregate state.",
+            "biological_consequence": [
+              "Cellular Stress → Ataxin-2-mediated recruitment of TDP-43 to stress granules → Altered stress granule dynamics → Enhanced TDP-43 aggregation propensity"
+            ],
+            "specific_effects": [
+              "Many RNA-binding proteins genetically linked to ALS, including FUS, TIA1, and TAF15, also localize to stress granules with Ataxin-2 and TDP-43."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Deciphering the interactome of Ataxin-2 and TDP-43 in iPSC-derived neurons for potential ALS targets",
+                "year": 2023,
+                "pmid": "39739690"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "39739690"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "binds",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "Ataxin-2 is a key component and modulator of stress granules. It facilitates the recruitment of TDP-43 into these structures during cellular stress.",
+        "effect": "Ataxin-2 acts as a scaffold within stress granules, promoting the interaction between TDP-43 and other RNA-binding proteins, which can influence TDP-43's transition from a liquid-like to a solid aggregate state.",
+        "summary": "TDP43 activates Ataxin-2 to modulate stress granule assembly, ultimately affecting enhanced tdp-43 aggregation propensity.",
+        "evidence": [
+          {
+            "paper_title": "Deciphering the interactome of Ataxin-2 and TDP-43 in iPSC-derived neurons for potential ALS targets",
+            "year": 2023
+          }
+        ],
+        "interaction_effect": "binding",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 4
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--binds--> Ataxin-2:"
+      },
+      {
+        "primary": "TIA-1",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 is recruited to stress granules and interacts with core components, including TIA-1. Depletion of TDP-43 disrupts the controlled aggregation of TIA-1.",
+        "functions": [
+          {
+            "function": "Stress Granule Assembly",
+            "arrow": "regulates",
+            "cellular_process": "TIA-1 is a primary nucleator of stress granules. TDP-43 interacts with TIA-1 and is recruited to these granules during the cellular stress response. TDP-43 is required for the proper secondary aggregation and maintenance of TIA-1-positive stress granules.",
+            "effect_description": "Depletion of TDP-43 disrupts the controlled aggregation of TIA-1, leading to delayed and altered stress granule formation. This highlights TDP-43's role in modulating the core machinery of the stress response.",
+            "biological_consequence": [
+              "Loss of TDP-43 → Disrupted TIA-1 aggregation → Delayed/abnormal stress granule assembly → Impaired cellular stress response → Increased cell vulnerability"
+            ],
+            "specific_effects": [
+              "TDP-43 knockdown has been shown to slow stress granule assembly.",
+              "Phospho-TDP-43 foci consistently colocalize with TIA-1 positive stress granules following acute stress."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TAR DNA-binding protein 43 (TDP-43) regulates stress granule dynamics via differential regulation of G3BP and TIA-1",
+                "year": 2011,
+                "pmid": "21257637"
+              },
+              {
+                "paper_title": "TDP-43 Aggregation In Neurodegeneration: Are Stress Granules The Key?",
+                "year": 2011,
+                "pmid": "22405725"
+              },
+              {
+                "paper_title": "Stress Granule Assembly Can Facilitate but Is Not Required for TDP-43 Cytoplasmic Aggregation",
+                "year": 2021,
+                "pmid": "32992901"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "regulates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "21257637",
+              "22405725",
+              "32992901"
+            ],
+            "function_effect": "regulation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "regulates",
+              "net_from": "TDP43",
+              "net_arrow": "regulates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "regulates",
+            "direct_arrow": "regulates",
+            "net_effect": "regulation",
+            "direct_effect": "regulation"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TIA-1 is a primary nucleator of stress granules. TDP-43 interacts with TIA-1 and is recruited to these granules during the cellular stress response. TDP-43 is required for the proper secondary aggregation and maintenance of TIA-1-positive stress granules.",
+        "effect": "Depletion of TDP-43 disrupts the controlled aggregation of TIA-1, leading to delayed and altered stress granule formation. This highlights TDP-43's role in modulating the core machinery of the stress response.",
+        "summary": "TDP43 activates TIA-1 to modulate stress granule assembly, ultimately affecting increased cell vulnerability.",
+        "evidence": [
+          {
+            "paper_title": "TAR DNA-binding protein 43 (TDP-43) regulates stress granule dynamics via differential regulation of G3BP and TIA-1",
+            "year": 2011
+          },
+          {
+            "paper_title": "TDP-43 Aggregation In Neurodegeneration: Are Stress Granules The Key?",
+            "year": 2011
+          },
+          {
+            "paper_title": "Stress Granule Assembly Can Facilitate but Is Not Required for TDP-43 Cytoplasmic Aggregation",
+            "year": 2021
+          }
+        ],
+        "interaction_effect": "regulation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --regulates--> TIA-1:"
+      },
+      {
+        "primary": "G3BP1",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 is a component of stress granules that contain G3BP1 and regulates G3BP1 levels and the assembly and maintenance of these granules.",
+        "functions": [
+          {
+            "function": "G3BP1 mRNA Stability",
+            "arrow": "activates",
+            "cellular_process": "Nuclear TDP-43 binds directly to a highly conserved cis-regulatory element within the 3' untranslated region (UTR) of the G3BP1 mRNA.",
+            "effect_description": "This binding stabilizes the G3BP1 transcript, leading to increased G3BP1 protein levels. Loss of nuclear TDP-43 function results in G3BP1 mRNA destabilization, reduced protein levels, and consequently, a compromised stress granule response.",
+            "biological_consequence": [
+              "TDP-43 nuclear depletion → Decreased G3BP1 mRNA stability → Reduced G3BP1 protein levels → Impaired stress granule assembly → Increased neuronal vulnerability to stress"
+            ],
+            "specific_effects": [
+              "G3BP1 is a critical, rate-limiting factor for stress granule assembly.",
+              "G3BP1 mRNA levels are reduced in ALS/FTD patient neurons that exhibit TDP-43 nuclear depletion.",
+              "Reintroduction of G3BP1 can rescue the defective stress granule assembly observed in TDP-43 depleted cells."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 stabilizes G3BP1 mRNA: relevance to amyotrophic lateral sclerosis/frontotemporal dementia",
+                "year": 2021,
+                "pmid": "34115105"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "34115105"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "activates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "Nuclear TDP-43 binds directly to a highly conserved cis-regulatory element within the 3' untranslated region (UTR) of the G3BP1 mRNA.",
+        "effect": "This binding stabilizes the G3BP1 transcript, leading to increased G3BP1 protein levels. Loss of nuclear TDP-43 function results in G3BP1 mRNA destabilization, reduced protein levels, and consequently, a compromised stress granule response.",
+        "summary": "TDP43 activates G3BP1 to modulate g3bp1 mrna stability, ultimately affecting increased neuronal vulnerability to stress.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 stabilizes G3BP1 mRNA: relevance to amyotrophic lateral sclerosis/frontotemporal dementia",
+            "year": 2021
+          },
+          {
+            "paper_title": "Understanding G3BP1 and stress granule dynamics in ALS",
+            "year": 2020
+          }
+        ],
+        "interaction_effect": "activation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 1
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --activates--> G3BP1:"
+      },
+      {
+        "primary": "SQSTM1/p62",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "The autophagy receptor p62/SQSTM1 directly co-localizes with pathological TDP-43 aggregates in patient neurons, indicating it binds to ubiquitinated TDP-43 to facilitate its clearance.",
+        "functions": [
+          {
+            "function": "Autophagic Clearance of TDP-43 Aggregates",
+            "arrow": "activates",
+            "cellular_process": "SQSTM1/p62 is an autophagy receptor that recognizes and binds to ubiquitinated protein aggregates. It co-localizes with pathological TDP-43 inclusions in patient neurons.",
+            "effect_description": "p62 acts as a bridge, linking ubiquitinated TDP-43 aggregates to the autophagosome machinery (via its interaction with LC3), thereby targeting the aggregates for degradation by autophagy (a process known as aggrephagy).",
+            "biological_consequence": [
+              "TDP-43 aggregation → Ubiquitination of TDP-43 → p62 recognition and binding → Recruitment of autophagosome → Lysosomal degradation of TDP-43 aggregates"
+            ],
+            "specific_effects": [
+              "Inclusions in IBMPFD (caused by VCP mutations) and ALS are positive for ubiquitin, p62, and TDP-43.",
+              "Impaired autophagy leads to the accumulation of both p62 and TDP-43."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+                "year": 2009,
+                "pmid": "20008565"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "20008565"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "binds",
+        "direction": "primary_to_main",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "SQSTM1/p62 is an autophagy receptor that recognizes and binds to ubiquitinated protein aggregates. It co-localizes with pathological TDP-43 inclusions in patient neurons.",
+        "effect": "p62 acts as a bridge, linking ubiquitinated TDP-43 aggregates to the autophagosome machinery (via its interaction with LC3), thereby targeting the aggregates for degradation by autophagy (a process known as aggrephagy).",
+        "summary": "TDP43 activates SQSTM1/p62 to modulate autophagic clearance of tdp-43 aggregates, ultimately affecting lysosomal degradation of tdp-43 aggregates.",
+        "evidence": [
+          {
+            "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+            "year": 2009
+          },
+          {
+            "paper_title": "p62/SQSTM1 is a promising target for the treatment of ALS",
+            "year": 2021
+          }
+        ],
+        "interaction_effect": "binding",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--binds-- SQSTM1/p62:"
+      },
+      {
+        "primary": "VCP",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Valosin-containing protein (VCP) is an autophagy regulator that co-localizes with TDP-43, p62, and ubiquitin in inclusions within motor neurons of ALS patients.",
+        "functions": [
+          {
+            "function": "TDP-43 Aggregate Clearance",
+            "arrow": "activates",
+            "cellular_process": "VCP is an AAA-ATPase that functions as a segregase, extracting ubiquitinated proteins, including TDP-43, from larger complexes or aggregates. This action is critical for preparing the aggregates for degradation by either the proteasome or autophagy.",
+            "effect_description": "VCP facilitates the clearance of both nuclear and cytoplasmic TDP-43 aggregates. Pathogenic mutations in VCP or inhibition of its ATPase activity impair this clearance, leading to the accumulation of insoluble, ubiquitinated TDP-43.",
+            "biological_consequence": [
+              "TDP-43 aggregates form → VCP extracts ubiquitinated TDP-43 → TDP-43 is delivered to proteasome or autophagy pathways → Aggregate clearance and restored proteostasis"
+            ],
+            "specific_effects": [
+              "Mutations in VCP cause Multisystem Proteinopathy (MSP), which is characterized by TDP-43 inclusions.",
+              "Loss of VCP function leads to decreased clearance of insoluble intranuclear TDP-43.",
+              "Pharmacological activation of VCP can enhance the clearance of intranuclear TDP-43 aggregates."
+            ],
+            "evidence": [
+              {
+                "paper_title": "VCP activator reverses nuclear proteostasis defects and enhances TDP-43 aggregate clearance in multisystem proteinopathy models",
+                "year": 2024,
+                "pmid": "38787785"
+              },
+              {
+                "paper_title": "Cdc48/VCP and Endocytosis Regulate TDP-43 and FUS Toxicity and Turnover",
+                "year": 2018,
+                "pmid": "31767634"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "38787785",
+              "31767634"
+            ],
+            "function_effect": "activation"
+          },
+          {
+            "function": "Autophagosome Maturation",
+            "arrow": "activates",
+            "cellular_process": "VCP is required for multiple stages of autophagy, including the fusion of autophagosomes with lysosomes to form functional autolysosomes. This maturation step is essential for the final degradation of autophagic cargo.",
+            "effect_description": "Loss of VCP function or expression of disease-mutant VCP leads to the accumulation of immature, non-degradative autophagosomes. This blocks the autophagic flux and prevents the clearance of substrates like aggregated TDP-43.",
+            "biological_consequence": [
+              "VCP dysfunction → Impaired autophagosome-lysosome fusion → Accumulation of autophagosomes and protein aggregates (including TDP-43) → Cellular toxicity and neurodegeneration"
+            ],
+            "specific_effects": [
+              "Inhibition of autophagy recapitulates the cytoplasmic TDP-43 accumulation seen in cells with VCP mutations.",
+              "VCP regulates autophagy at multiple steps, including initiation, cargo routing, and maturation."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+                "year": 2009,
+                "pmid": "20008565"
+              },
+              {
+                "paper_title": "Valosin Containing Protein (VCP): A Multistep Regulator of Autophagy",
+                "year": 2020,
+                "pmid": "35216053"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "20008565",
+              "35216053"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "binds",
+        "direction": "primary_to_main",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "VCP is an AAA-ATPase that functions as a segregase, extracting ubiquitinated proteins, including TDP-43, from larger complexes or aggregates. This action is critical for preparing the aggregates for degradation by either the proteasome or autophagy. VCP is required for multiple stages of autophagy, including the fusion of autophagosomes with lysosomes to form functional autolysosomes. This maturation step is essential for the final degradation of autophagic cargo.",
+        "effect": "VCP facilitates the clearance of both nuclear and cytoplasmic TDP-43 aggregates. Pathogenic mutations in VCP or inhibition of its ATPase activity impair this clearance, leading to the accumulation of insoluble, ubiquitinated TDP-43.; Loss of VCP function or expression of disease-mutant VCP leads to the accumulation of immature, non-degradative autophagosomes. This blocks the autophagic flux and prevents the clearance of substrates like aggregated TDP-43.",
+        "summary": "TDP43 activates VCP to regulate tdp-43 aggregate clearance and autophagosome maturation, ultimately affecting aggregate clearance and restored proteostasis.",
+        "evidence": [
+          {
+            "paper_title": "VCP activator reverses nuclear proteostasis defects and enhances TDP-43 aggregate clearance in multisystem proteinopathy models",
+            "year": 2024
+          },
+          {
+            "paper_title": "Cdc48/VCP and Endocytosis Regulate TDP-43 and FUS Toxicity and Turnover",
+            "year": 2018
+          },
+          {
+            "paper_title": "Valosin-containing protein (VCP) is required for autophagy and is disrupted in VCP disease",
+            "year": 2009
+          },
+          {
+            "paper_title": "Valosin Containing Protein (VCP): A Multistep Regulator of Autophagy",
+            "year": 2020
+          }
+        ],
+        "interaction_effect": "binds",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 5
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--binds-- VCP:"
+      },
+      {
+        "primary": "UBQLN2",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 aggregates are decorated with degradation adaptor proteins, and TDP-43 aggregation is a central feature in ALS cases caused by UBQLN2 mutations.",
+        "functions": [
+          {
+            "function": "TDP-43 Protein Clearance",
+            "arrow": "activates",
+            "cellular_process": "UBQLN2 is a shuttle protein that can deliver ubiquitinated substrates to both the proteasome and the autophagy pathway. It binds directly to the C-terminal region of TDP-43.",
+            "effect_description": "Overexpression of UBQLN2 enhances the clearance of both full-length TDP-43 and its aggregation-prone C-terminal fragments, thereby reducing their cellular levels.",
+            "biological_consequence": [
+              "TDP-43 aggregation → UBQLN2 binding → Delivery to proteasome/autophagy pathways → Enhanced TDP-43 degradation → Reduced TDP-43 toxicity"
+            ],
+            "specific_effects": [
+              "Mutations in UBQLN2 are linked to X-linked ALS-FTD and result in TDP-43 pathology.",
+              "UBQLN2 co-localizes with TDP-43 aggregates in patient neurons.",
+              "Overexpression of UBQLN2 can dramatically lower the levels of overexpressed TDP-43 and its fragments in cell models."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Ubiquilin-2 (UBQLN2) binds with high affinity to the C-terminal region of TDP-43 and modulates TDP-43 levels in H4 cells: characterization of inhibition by nucleic acids and 4-aminoquinolines",
+                "year": 2013,
+                "pmid": "23541532"
+              },
+              {
+                "paper_title": "Differential roles of the ubiquitin proteasome system and autophagy in the clearance of soluble and aggregated TDP-43 species",
+                "year": 2014,
+                "pmid": "24424030"
+              },
+              {
+                "paper_title": "Human Ubiquilin 2 and TDP-43 copathology drives neurodegeneration in transgenic Caenorhabditis elegans",
+                "year": 2017,
+                "pmid": "33963840"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "23541532",
+              "24424030",
+              "33963840"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "binds",
+        "direction": "primary_to_main",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "UBQLN2 is a shuttle protein that can deliver ubiquitinated substrates to both the proteasome and the autophagy pathway. It binds directly to the C-terminal region of TDP-43.",
+        "effect": "Overexpression of UBQLN2 enhances the clearance of both full-length TDP-43 and its aggregation-prone C-terminal fragments, thereby reducing their cellular levels.",
+        "summary": "TDP43 activates UBQLN2 to modulate tdp-43 protein clearance, ultimately affecting reduced tdp-43 toxicity.",
+        "evidence": [
+          {
+            "paper_title": "Ubiquilin-2 (UBQLN2) binds with high affinity to the C-terminal region of TDP-43 and modulates TDP-43 levels in H4 cells: characterization of inhibition by nucleic acids and 4-aminoquinolines",
+            "year": 2013
+          },
+          {
+            "paper_title": "Differential roles of the ubiquitin proteasome system and autophagy in the clearance of soluble and aggregated TDP-43 species",
+            "year": 2014
+          },
+          {
+            "paper_title": "Human Ubiquilin 2 and TDP-43 copathology drives neurodegeneration in transgenic Caenorhabditis elegans",
+            "year": 2017
+          }
+        ],
+        "interaction_effect": "binding",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--binds-- UBQLN2:"
+      },
+      {
+        "primary": "Parkin",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "The E3 ubiquitin ligase Parkin directly ubiquitinates TDP-43. Additionally, TDP-43 binds to Parkin mRNA to regulate its expression.",
+        "functions": [
+          {
+            "function": "TDP-43 Ubiquitination",
+            "arrow": "activates",
+            "cellular_process": "Parkin, an E3 ubiquitin ligase, directly interacts with and mediates both K48- and K63-linked polyubiquitination of TDP-43.",
+            "effect_description": "Parkin-mediated ubiquitination promotes the cytosolic accumulation and sequestration of TDP-43 into inclusions, a process that involves forming a complex with HDAC6. This does not necessarily lead to immediate degradation but rather facilitates its translocation and aggregation.",
+            "biological_consequence": [
+              "TDP-43 in cytoplasm → Parkin-mediated ubiquitination → Complex formation with HDAC6 → Cytosolic sequestration and inclusion formation"
+            ],
+            "specific_effects": [
+              "Parkin ubiquitinates TDP-43, facilitating its cytosolic accumulation.",
+              "This ubiquitination promotes the formation of TDP-43 inclusions rather than immediate proteolytic clearance."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Parkin ubiquitinates Tar-DNA binding protein-43 (TDP-43) and promotes its cytosolic accumulation via interaction with histone deacetylase 6 (HDAC6)",
+                "year": 2013,
+                "pmid": "23258539"
+              },
+              {
+                "paper_title": "Functional implication of ubiquitinating and deubiquitinating mechanisms in TDP-43 proteinopathies",
+                "year": 2022,
+                "pmid": "36158183"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "23258539",
+              "36158183"
+            ],
+            "function_effect": "activation"
+          },
+          {
+            "function": "Parkin mRNA Stability",
+            "arrow": "regulates",
+            "cellular_process": "TDP-43 binds to the pre-mRNA of Parkin (PARK2), which contains long introns, and regulates its expression.",
+            "effect_description": "TDP-43 is crucial for maintaining the stability and proper processing of Parkin mRNA. Overexpression of TDP-43 increases Parkin mRNA and protein levels, while nuclear depletion of TDP-43 leads to Parkin downregulation.",
+            "biological_consequence": [
+              "Loss of nuclear TDP-43 → Decreased Parkin mRNA stability → Reduced Parkin protein levels → Impaired protein quality control → Increased neurotoxicity"
+            ],
+            "specific_effects": [
+              "TDP-43 depletion consistently results in Parkin mRNA and protein downregulation in various models.",
+              "In motor neurons from sporadic ALS patients, Parkin decrease correlates with the presence of TDP-43 aggregates."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Parkin reverses TDP-43-induced cell death and failure of amino acid homeostasis",
+                "year": 2014,
+                "pmid": "24298989"
+              },
+              {
+                "paper_title": "Parkin beyond Parkinson's Disease—A Functional Meaning of Parkin Downregulation in TDP-43 Proteinopathies",
+                "year": 2021,
+                "pmid": "34943897"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "regulates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "24298989",
+              "34943897"
+            ],
+            "function_effect": "regulation"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "Parkin, an E3 ubiquitin ligase, directly interacts with and mediates both K48- and K63-linked polyubiquitination of TDP-43. TDP-43 binds to the pre-mRNA of Parkin (PARK2), which contains long introns, and regulates its expression.",
+        "effect": "Parkin-mediated ubiquitination promotes the cytosolic accumulation and sequestration of TDP-43 into inclusions, a process that involves forming a complex with HDAC6. This does not necessarily lead to immediate degradation but rather facilitates its translocation and aggregation.; TDP-43 is crucial for maintaining the stability and proper processing of Parkin mRNA. Overexpression of TDP-43 increases Parkin mRNA and protein levels, while nuclear depletion of TDP-43 leads to Parkin downregulation.",
+        "summary": "TDP43 activates Parkin to regulate tdp-43 ubiquitination and parkin mrna stability, ultimately affecting cytosolic sequestration and inclusion formation.",
+        "evidence": [
+          {
+            "paper_title": "Parkin ubiquitinates Tar-DNA binding protein-43 (TDP-43) and promotes its cytosolic accumulation via interaction with histone deacetylase 6 (HDAC6)",
+            "year": 2013
+          },
+          {
+            "paper_title": "Functional implication of ubiquitinating and deubiquitinating mechanisms in TDP-43 proteinopathies",
+            "year": 2022
+          },
+          {
+            "paper_title": "Parkin reverses TDP-43-induced cell death and failure of amino acid homeostasis",
+            "year": 2014
+          },
+          {
+            "paper_title": "Parkin beyond Parkinson's Disease—A Functional Meaning of Parkin Downregulation in TDP-43 Proteinopathies",
+            "year": 2021
+          }
+        ],
+        "interaction_effect": "regulates",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 5
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--regulates--> Parkin:"
+      },
+      {
+        "primary": "Drosha",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 is found in a complex with the RNase III enzyme Drosha, indicating a direct role in the processing of microRNAs.",
+        "functions": [
+          {
+            "function": "microRNA Biogenesis",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 is a component of the nuclear Drosha/DGCR8 microprocessor complex. It facilitates the cleavage of primary microRNAs (pri-miRNAs) into precursor miRNAs (pre-miRNAs).",
+            "effect_description": "TDP-43 enhances the processing of a subset of pri-miRNAs by binding directly to them and facilitating the binding of the Drosha complex, thus promoting their maturation.",
+            "biological_consequence": [
+              "TDP-43 associates with Drosha complex → Enhanced binding to specific pri-miRNAs → Efficient cleavage into pre-miRNAs → Altered expression of mature miRNAs → Dysregulation of target gene expression"
+            ],
+            "specific_effects": [
+              "TDP-43 interacts with the Drosha complex in both an RNA-dependent and -independent manner.",
+              "Loss of TDP-43 function can lead to altered expression levels of specific miRNAs, which is important for processes like neuronal outgrowth."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 promotes microRNA biogenesis as a component of the Drosha and Dicer complexes",
+                "year": 2012,
+                "pmid": "22323604"
+              },
+              {
+                "paper_title": "Emerging roles of DROSHA beyond primary microRNA processing",
+                "year": 2017,
+                "pmid": "29171328"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "22323604",
+              "29171328"
+            ]
+          },
+          {
+            "function": "Drosha Protein Stability",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 interacts with the Drosha protein and is required to maintain its stability, particularly during neuronal differentiation.",
+            "effect_description": "Loss of nuclear TDP-43 function leads to the destabilization and degradation of Drosha. This reduces the overall levels of the microprocessor complex, thereby impairing global microRNA biogenesis.",
+            "biological_consequence": [
+              "Loss of TDP-43 → Drosha protein instability → Reduced microprocessor complex levels → Impaired global miRNA production → Dysregulation of neurogenesis"
+            ],
+            "specific_effects": [
+              "TDP-43 is required for the Drosha-mediated regulation of Neurogenin 2, a master gene for neurogenesis.",
+              "By regulating the abundance of the Drosha complex, TDP-43 controls the entire miRNA repertoire in differentiating neurons."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 regulates the Microprocessor complex activity during in vitro neuronal differentiation",
+                "year": 2013,
+                "pmid": "24113842"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "24113842"
+            ]
+          }
+        ],
+        "arrow": "activates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 is a component of the nuclear Drosha/DGCR8 microprocessor complex. It facilitates the cleavage of primary microRNAs (pri-miRNAs) into precursor miRNAs (pre-miRNAs). TDP-43 interacts with the Drosha protein and is required to maintain its stability, particularly during neuronal differentiation.",
+        "effect": "TDP-43 enhances the processing of a subset of pri-miRNAs by binding directly to them and facilitating the binding of the Drosha complex, thus promoting their maturation.; Loss of nuclear TDP-43 function leads to the destabilization and degradation of Drosha. This reduces the overall levels of the microprocessor complex, thereby impairing global microRNA biogenesis.",
+        "summary": "TDP43 activates Drosha to regulate microrna biogenesis and drosha protein stability, ultimately affecting dysregulation of target gene expression.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 promotes microRNA biogenesis as a component of the Drosha and Dicer complexes",
+            "year": 2012
+          },
+          {
+            "paper_title": "Emerging roles of DROSHA beyond primary microRNA processing",
+            "year": 2017
+          },
+          {
+            "paper_title": "TDP-43 regulates the Microprocessor complex activity during in vitro neuronal differentiation",
+            "year": 2013
+          }
+        ],
+        "arrow_notation": "TDP43 --activates--> Drosha:"
+      },
+      {
+        "primary": "NEFL",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 directly binds to the 3'-UTR of the neurofilament light chain (NFL) mRNA, which increases the stability of the transcript.",
+        "functions": [
+          {
+            "function": "NEFL mRNA Stability and Axonal Transport",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 binds to UG-rich sequences in the 3' untranslated region (UTR) of the neurofilament light (NEFL) mRNA.",
+            "effect_description": "This binding stabilizes the NEFL transcript and promotes its transport into axons within mRNP granules. TDP-43's presence in these granules influences their movement, favoring anterograde (outward) transport.",
+            "biological_consequence": [
+              "TDP-43 binds NEFL mRNA → Increased mRNA stability and packaging into granules → Anterograde transport into axons → Localized NEFL protein synthesis → Maintenance of axonal cytoskeleton"
+            ],
+            "specific_effects": [
+              "Loss of TDP-43 function can lead to reduced stability and mislocalization of NEFL mRNA, impairing cytoskeletal integrity.",
+              "TDP-43-containing NEFL mRNP granules move predominantly in the anterograde direction."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Characterizing the RNA targets and position-dependent splicing regulation by TDP-43",
+                "year": 2011,
+                "pmid": "21358640"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "21358640"
+            ]
+          }
+        ],
+        "arrow": "activates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 binds to UG-rich sequences in the 3' untranslated region (UTR) of the neurofilament light (NEFL) mRNA.",
+        "effect": "This binding stabilizes the NEFL transcript and promotes its transport into axons within mRNP granules. TDP-43's presence in these granules influences their movement, favoring anterograde (outward) transport.",
+        "summary": "TDP43 activates NEFL to modulate nefl mrna stability and axonal transport, ultimately affecting maintenance of axonal cytoskeleton.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 in ALS: Stay on target… Almost there",
+            "year": 2014
+          },
+          {
+            "paper_title": "Characterizing the RNA targets and position-dependent splicing regulation by TDP-43",
+            "year": 2011
+          }
+        ],
+        "arrow_notation": "TDP43 --activates--> NEFL:"
+      },
+      {
+        "primary": "TAF15",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TAF15, an RNA-binding protein implicated in ALS, was identified as a strong binder of Ataxin-2 in the presence of TDP-43 overexpression, suggesting it is part of a TDP-43/Ataxin-2 complex.",
+        "functions": [
+          {
+            "function": "Stress Granule Assembly",
+            "arrow": "activates",
+            "cellular_process": "TAF15 is an RNA-binding protein that, like TDP-43, belongs to the FET family and is recruited to stress granules under conditions of cellular stress.",
+            "effect_description": "TAF15 co-localizes with TDP-43 in stress granules, suggesting a functional interaction within these dynamic structures. The interaction may be part of a larger complex involving other ALS-linked proteins like Ataxin-2, contributing to stress granule dynamics and potentially pathological aggregation.",
+            "biological_consequence": [
+              "Cellular stress → Co-recruitment of TAF15 and TDP-43 to stress granules → Altered stress granule dynamics → Potential for aberrant phase transition → Formation of pathological inclusions"
+            ],
+            "specific_effects": [
+              "Mutations in TAF15 are a rare cause of ALS and FTD.",
+              "TAF15 is a component of a TDP-43/Ataxin-2 protein complex."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Deciphering the interactome of Ataxin-2 and TDP-43 in iPSC-derived neurons for potential ALS targets",
+                "year": 2023,
+                "pmid": "39739690"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "39739690"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "complex",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TAF15 is an RNA-binding protein that, like TDP-43, belongs to the FET family and is recruited to stress granules under conditions of cellular stress.",
+        "effect": "TAF15 co-localizes with TDP-43 in stress granules, suggesting a functional interaction within these dynamic structures. The interaction may be part of a larger complex involving other ALS-linked proteins like Ataxin-2, contributing to stress granule dynamics and potentially pathological aggregation.",
+        "summary": "TDP43 activates TAF15 to modulate stress granule assembly, ultimately affecting formation of pathological inclusions.",
+        "evidence": [
+          {
+            "paper_title": "Deciphering the interactome of Ataxin-2 and TDP-43 in iPSC-derived neurons for potential ALS targets",
+            "year": 2023
+          }
+        ],
+        "interaction_effect": "complex formation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 4
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--complex--> TAF15:"
+      },
+      {
+        "primary": "hnRNPC1/C2",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "The glycine-rich C-terminus of TDP-43 directly interacts with hnRNPC1/C2, as identified through proteomic approaches.",
+        "functions": [
+          {
+            "function": "Alternative Splicing",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 and hnRNPC are both core components of the spliceosome and co-regulate the splicing of target pre-mRNAs.",
+            "effect_description": "TDP-43 and hnRNPC can bind to overlapping or adjacent sites on pre-mRNAs, cooperatively or competitively influencing splice site selection and exon inclusion/exclusion. This interaction is part of a broader network of hnRNPs that fine-tune the transcriptome.",
+            "biological_consequence": [
+              "TDP-43/hnRNPC interaction → Co-regulation of splicing targets → Altered protein isoform ratios → Disrupted cellular function"
+            ],
+            "specific_effects": [
+              "Like TDP-43, hnRNPC is known to suppress cryptic exon inclusion.",
+              "The interaction contributes to the complex regulatory network governing RNA processing."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Abnormal Splicing Events due to Loss of Nuclear Function of TDP-43: Pathophysiology and Perspectives",
+                "year": 2024,
+                "pmid": "39114608"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "39114608"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "complex",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 and hnRNPC are both core components of the spliceosome and co-regulate the splicing of target pre-mRNAs.",
+        "effect": "TDP-43 and hnRNPC can bind to overlapping or adjacent sites on pre-mRNAs, cooperatively or competitively influencing splice site selection and exon inclusion/exclusion. This interaction is part of a broader network of hnRNPs that fine-tune the transcriptome.",
+        "summary": "TDP43 activates hnRNPC1/C2 to modulate alternative splicing, ultimately affecting disrupted cellular function.",
+        "evidence": [
+          {
+            "paper_title": "Abnormal Splicing Events due to Loss of Nuclear Function of TDP-43: Pathophysiology and Perspectives",
+            "year": 2024
+          }
+        ],
+        "interaction_effect": "complex",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--complex--> hnRNPC1/C2:"
+      },
+      {
+        "primary": "ATG7",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 2,
+        "support_summary": "TDP-43 functionally regulates autophagy by binding to and stabilizing Atg7 mRNA. Loss of TDP-43 leads to destabilization of Atg7 mRNA, reduced ATG7 protein levels, and impaired autophagy.",
+        "functions": [
+          {
+            "function": "ATG7 mRNA Stability",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 binds directly to the mRNA of Atg7, a crucial E1-like activating enzyme for autophagy, through its RRM1 domain.",
+            "effect_description": "This binding stabilizes the Atg7 transcript, ensuring adequate levels of ATG7 protein are maintained for autophagic function. Loss of nuclear TDP-43 function leads to Atg7 mRNA destabilization and subsequent degradation.",
+            "biological_consequence": [
+              "Loss of nuclear TDP-43 → Destabilization of Atg7 mRNA → Reduced ATG7 protein levels → Impaired autophagosome formation → Defective autophagy and accumulation of protein aggregates"
+            ],
+            "specific_effects": [
+              "Depletion of TDP-43 down-regulates ATG7 at both the mRNA and protein levels.",
+              "The reduction in ATG7 levels upon TDP-43 loss leads to impaired autophagic flux."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Regulation of autophagy by neuropathological protein TDP-43",
+                "year": 2011,
+                "pmid": "22052911"
+              },
+              {
+                "paper_title": "Maintaining the balance of TDP-43, mitochondria, and autophagy: a promising therapeutic strategy for neurodegenerative diseases",
+                "year": 2020,
+                "pmid": "33126923"
+              }
+            ],
+            "_context": {
+              "type": "chain",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "22052911",
+              "33126923"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "activates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "_chain_inferred": true,
+        "mechanism": "TDP-43 binds directly to the mRNA of Atg7, a crucial E1-like activating enzyme for autophagy, through its RRM1 domain.",
+        "effect": "This binding stabilizes the Atg7 transcript, ensuring adequate levels of ATG7 protein are maintained for autophagic function. Loss of nuclear TDP-43 function leads to Atg7 mRNA destabilization and subsequent degradation.",
+        "summary": "TDP43 activates ATG7 to modulate atg7 mrna stability, ultimately affecting defective autophagy and accumulation of protein aggregates.",
+        "evidence": [
+          {
+            "paper_title": "Regulation of autophagy by neuropathological protein TDP-43",
+            "year": 2011
+          },
+          {
+            "paper_title": "Maintaining the balance of TDP-43, mitochondria, and autophagy: a promising therapeutic strategy for neurodegenerative diseases",
+            "year": 2020
+          }
+        ],
+        "interaction_effect": "activation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 0
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --activates--> ATG7:"
+      },
+      {
+        "primary": "ATG4B",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 2,
+        "support_summary": "Loss of nuclear TDP-43 function leads to the inclusion of a cryptic exon in the ATG4B transcript, resulting in altered protein production and subsequent disruption of the autophagy process.",
+        "functions": [
+          {
+            "function": "ATG4B Splicing",
+            "arrow": "activates",
+            "cellular_process": "Nuclear TDP-43 binds to the pre-mRNA of ATG4B, a key cysteine protease in autophagy, and represses the inclusion of a non-conserved cryptic exon.",
+            "effect_description": "Loss of nuclear TDP-43 function allows this cryptic exon to be spliced into the mature ATG4B mRNA. This aberrant transcript leads to reduced production of functional ATG4B protein, which is critical for autophagosome maturation.",
+            "biological_consequence": [
+              "TDP-43 nuclear depletion → Cryptic exon inclusion in ATG4B mRNA → Reduced functional ATG4B protein → Impaired autophagosome maturation and LC3 processing → Defective autophagy"
+            ],
+            "specific_effects": [
+              "The inclusion of the cryptic exon in ATG4B is correlated with disease duration in ALS patients.",
+              "Restoring correct ATG4B splicing using antisense oligonucleotides can rescue the defect in TDP-43 depleted cells."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 regulates LC3ylation in neural tissue through ATG4B cryptic splicing inhibition",
+                "year": 2024,
+                "pmid": "39305312"
+              },
+              {
+                "paper_title": "Cryptic exon splicing function of TARDBP interacts with autophagy in nervous tissue",
+                "year": 2018,
+                "pmid": "29912613"
+              }
+            ],
+            "_context": {
+              "type": "chain",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "39305312",
+              "29912613"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "activates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "inhibits"
+          ]
+        },
+        "_chain_inferred": true,
+        "mechanism": "Nuclear TDP-43 binds to the pre-mRNA of ATG4B, a key cysteine protease in autophagy, and represses the inclusion of a non-conserved cryptic exon.",
+        "effect": "Loss of nuclear TDP-43 function allows this cryptic exon to be spliced into the mature ATG4B mRNA. This aberrant transcript leads to reduced production of functional ATG4B protein, which is critical for autophagosome maturation.",
+        "summary": "TDP43 inhibits ATG4B to modulate atg4b splicing, ultimately affecting defective autophagy.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 regulates LC3ylation in neural tissue through ATG4B cryptic splicing inhibition",
+            "year": 2024
+          },
+          {
+            "paper_title": "Cryptic exon splicing function of TARDBP interacts with autophagy in nervous tissue",
+            "year": 2018
+          }
+        ],
+        "interaction_effect": "activation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 2
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --activates--> ATG4B:"
+      },
+      {
+        "primary": "HDAC6",
+        "interaction_type": "complex",
+        "upstream_interactor": "Parkin",
+        "mediator_chain": [
+          "Parkin"
+        ],
+        "depth": 2,
+        "support_summary": "Parkin-mediated ubiquitination of TDP-43 promotes its interaction with HDAC6, which links the protein to the dynein motor complex for transport and clearance. TDP-43 also regulates HDAC6 expression by binding its mRNA.",
+        "functions": [
+          {
+            "function": "HDAC6 mRNA Stability",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 binds directly to HDAC6 mRNA and is necessary to maintain its physiological levels.",
+            "effect_description": "Loss of nuclear TDP-43 function (via silencing or mislocalization) leads to the downregulation of HDAC6 mRNA and protein. Conversely, TDP-43 overexpression can increase HDAC6 mRNA and protein levels.",
+            "biological_consequence": [
+              "Loss of nuclear TDP-43 → Decreased HDAC6 mRNA levels → Reduced HDAC6 protein → Impaired aggresome formation and autophagic clearance of misfolded proteins → Increased cytotoxicity"
+            ],
+            "specific_effects": [
+              "TDP-43 silencing results in HDAC6 downregulation and accumulation of its substrate, acetyl-tubulin.",
+              "This effect is dependent on TDP-43's RNA binding ability."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Knockdown of transactive response DNA-binding protein (TDP-43) downregulates histone deacetylase 6",
+                "year": 2010,
+                "pmid": "19910924"
+              },
+              {
+                "paper_title": "TDP-43 Controls HIV-1 Viral Production and Virus Infectiveness",
+                "year": 2021,
+                "pmid": "37108826"
+              }
+            ],
+            "_context": {
+              "type": "chain",
+              "query_protein": null,
+              "chain": [
+                "Parkin"
+              ]
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "19910924",
+              "37108826"
+            ],
+            "function_effect": "activation"
+          },
+          {
+            "function": "TDP-43 Aggregate Clearance",
+            "arrow": "activates",
+            "cellular_process": "HDAC6 is a key player in the clearance of misfolded proteins. It recognizes ubiquitinated protein aggregates and facilitates their transport along microtubules to form an aggresome, which is then cleared by autophagy.",
+            "effect_description": "HDAC6 overexpression reduces the levels of both soluble and insoluble TDP-43 and mitigates its cytoplasmic mislocalization. Parkin-ubiquitinated TDP-43 forms a complex with HDAC6 to facilitate this process.",
+            "biological_consequence": [
+              "Ubiquitinated TDP-43 aggregates → HDAC6 recognition → Dynein-mediated transport to aggresome → Autophagic clearance → Reduced TDP-43 pathology"
+            ],
+            "specific_effects": [
+              "Inhibition of HDAC6 can increase the accumulation of cytoplasmic TDP-43.",
+              "HDAC6 is part of a multi-protein complex with Parkin and ubiquitinated TDP-43."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Parkin ubiquitinates Tar-DNA binding protein-43 (TDP-43) and promotes its cytosolic accumulation via interaction with histone deacetylase 6 (HDAC6)",
+                "year": 2013,
+                "pmid": "23258539"
+              },
+              {
+                "paper_title": "The Role of HDAC6 in TDP-43-Induced Neurotoxicity and UPS Impairment",
+                "year": 2020,
+                "pmid": "33282865"
+              }
+            ],
+            "_context": {
+              "type": "chain",
+              "query_protein": null,
+              "chain": [
+                "Parkin"
+              ]
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "bidirectional",
+            "pmids": [
+              "23258539",
+              "33282865"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 binds directly to HDAC6 mRNA and is necessary to maintain its physiological levels. HDAC6 is a key player in the clearance of misfolded proteins. It recognizes ubiquitinated protein aggregates and facilitates their transport along microtubules to form an aggresome, which is then cleared by autophagy.",
+        "effect": "Loss of nuclear TDP-43 function (via silencing or mislocalization) leads to the downregulation of HDAC6 mRNA and protein. Conversely, TDP-43 overexpression can increase HDAC6 mRNA and protein levels.; HDAC6 overexpression reduces the levels of both soluble and insoluble TDP-43 and mitigates its cytoplasmic mislocalization. Parkin-ubiquitinated TDP-43 forms a complex with HDAC6 to facilitate this process.",
+        "summary": "TDP43 activates HDAC6 to regulate hdac6 mrna stability and tdp-43 aggregate clearance, ultimately affecting increased cytotoxicity.",
+        "evidence": [
+          {
+            "paper_title": "Knockdown of transactive response DNA-binding protein (TDP-43) downregulates histone deacetylase 6",
+            "year": 2010
+          },
+          {
+            "paper_title": "TDP-43 Controls HIV-1 Viral Production and Virus Infectiveness",
+            "year": 2021
+          },
+          {
+            "paper_title": "Parkin ubiquitinates Tar-DNA binding protein-43 (TDP-43) and promotes its cytosolic accumulation via interaction with histone deacetylase 6 (HDAC6)",
+            "year": 2013
+          },
+          {
+            "paper_title": "The Role of HDAC6 in TDP-43-Induced Neurotoxicity and UPS Impairment",
+            "year": 2020
+          }
+        ],
+        "_linked_mediator_interaction": "Parkin->HDAC6",
+        "interaction_effect": "regulation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 4
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --regulates--> HDAC6:"
+      },
+      {
+        "primary": "Importin-α",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 contains a nuclear localization signal (NLS) that is recognized by the Importin-α/β heterodimer, which mediates its transport into the nucleus.",
+        "functions": [
+          {
+            "function": "TDP-43 Nuclear Import",
+            "arrow": "activates",
+            "cellular_process": "Importin-α, as part of the Importin-α/β heterodimer, recognizes and binds to the bipartite nuclear localization signal (NLS) of TDP-43, mediating its active transport from the cytoplasm into the nucleus through the nuclear pore complex.",
+            "effect_description": "This interaction is essential for maintaining the predominantly nuclear localization of TDP-43. Binding of Importin-α to the TDP-43 NLS also has a chaperone-like activity, disrupting the dimerization of TDP-43's N-terminal domain and thereby preventing its aggregation.",
+            "biological_consequence": [
+              "TDP-43 NLS recognition by Importin-α/β → Translocation into nucleus → Maintenance of nuclear TDP-43 pool and function",
+              "Impaired Importin-α/β binding (due to mutations or PTMs in NLS) → Reduced nuclear import & increased cytoplasmic concentration → TDP-43 aggregation → Neurotoxicity"
+            ],
+            "specific_effects": [
+              "The TDP-43 NLS engages Importin-α through a bipartite mechanism involving both major and minor binding sites.",
+              "Binding of Importin-α sterically hinders the dimerization interface of the TDP-43 N-terminal domain, antagonizing its aggregation.",
+              "Mutations or post-translational modifications near the NLS can reduce binding affinity for Importin-α, leading to cytoplasmic mislocalization."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Recognition of the TDP-43 nuclear localization signal by importin α1/β",
+                "year": 2022,
+                "pmid": "35767952"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "35767952"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "binds",
+        "direction": "primary_to_main",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "Importin-α, as part of the Importin-α/β heterodimer, recognizes and binds to the bipartite nuclear localization signal (NLS) of TDP-43, mediating its active transport from the cytoplasm into the nucleus through the nuclear pore complex.",
+        "effect": "This interaction is essential for maintaining the predominantly nuclear localization of TDP-43. Binding of Importin-α to the TDP-43 NLS also has a chaperone-like activity, disrupting the dimerization of TDP-43's N-terminal domain and thereby preventing its aggregation.",
+        "summary": "TDP43 activates Importin-α to modulate tdp-43 nuclear import, ultimately affecting maintenance of nuclear tdp-43 pool and function.",
+        "evidence": [
+          {
+            "paper_title": "Recognition of the TDP-43 nuclear localization signal by importin α1/β",
+            "year": 2022
+          }
+        ],
+        "interaction_effect": "binds",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 4
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--binds-- Importin-α:"
+      },
+      {
+        "primary": "Exportin-1",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 possesses a nuclear export signal (NES) that interacts with Exportin-1 (XPO1/CRM1) to facilitate its transport from the nucleus to the cytoplasm.",
+        "functions": [
+          {
+            "function": "TDP-43 Nuclear Export",
+            "arrow": "regulates",
+            "cellular_process": "While TDP-43 contains predicted nuclear export signals (NES) for Exportin-1 (XPO1/CRM1), functional studies show these signals are non-functional. TDP-43's nuclear export occurs independently of the Exportin-1 pathway.",
+            "effect_description": "TDP-43 is not an active cargo for Exportin-1. Instead, it appears to exit the nucleus via passive diffusion, a process limited by its binding to nuclear RNA. Therefore, Exportin-1 does not actively export TDP-43.",
+            "biological_consequence": [
+              "TDP-43 is not recognized by Exportin-1 → Export is not actively mediated → Nuclear retention is favored"
+            ],
+            "specific_effects": [
+              "Predicted NESs in TDP-43 are non-functional, and mutations in them do not abrogate nuclear export.",
+              "Inhibition or silencing of Exportin-1 (CRM1) does not prevent the nuclear export of TDP-43.",
+              "Artificially enlarging TDP-43 impairs its nuclear egress, supporting a passive diffusion model rather than active transport."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Nuclear egress of TDP-43 and FUS occurs independently of Exportin-1/CRM1",
+                "year": 2018,
+                "pmid": "29728564"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "regulates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "29728564"
+            ],
+            "name": "Regulation of TDP-43 Nuclear Localization",
+            "consequences": "TDP-43 nuclear export occurs independently of Exportin-1, likely via passive diffusion. Its nuclear retention is regulated by binding to newly synthesized RNA, not by a direct interaction with Exportin-1.",
+            "function_effect": "regulation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "regulates",
+              "net_from": "TDP43",
+              "net_arrow": "regulates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "regulates",
+            "direct_arrow": "regulates",
+            "net_effect": "regulation",
+            "direct_effect": "regulation"
+          }
+        ],
+        "arrow": "inhibits",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "inhibits"
+          ]
+        },
+        "mechanism": "While TDP-43 contains predicted nuclear export signals (NES) for Exportin-1 (XPO1/CRM1), functional studies show these signals are non-functional. TDP-43's nuclear export occurs independently of the Exportin-1 pathway.",
+        "effect": "TDP-43 is not an active cargo for Exportin-1. Instead, it appears to exit the nucleus via passive diffusion, a process limited by its binding to nuclear RNA. Therefore, Exportin-1 does not actively export TDP-43.",
+        "summary": "TDP43 inhibits Exportin-1 to modulate tdp-43 nuclear export, ultimately affecting nuclear retention is favored.",
+        "evidence": [
+          {
+            "paper_title": "Nuclear egress of TDP-43 and FUS occurs independently of Exportin-1/CRM1",
+            "year": 2018
+          },
+          {
+            "paper_title": "No, TDP-43 and FUS Are Not Actively Exported From the Nucleus",
+            "year": 2018
+          }
+        ],
+        "interaction_effect": "inhibition",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 2
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --inhibits--> Exportin-1:"
+      },
+      {
+        "primary": "Matrin-3",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Matrin-3 (MATR3), another RNA-binding protein linked to ALS, interacts with TDP-43 in an RNA-dependent manner, and the two proteins co-localize in cytoplasmic inclusions.",
+        "functions": [
+          {
+            "function": "TDP-43 mRNA Nuclear Export",
+            "arrow": "activates",
+            "cellular_process": "Matrin-3 is a component of the Transcription and Export (TREX) complex, which is involved in mRNA biogenesis and nuclear export.",
+            "effect_description": "ALS-associated mutations in Matrin-3 (e.g., S85C, T622A) cause defects in the nuclear export of specific mRNAs, including TDP-43 mRNA. This leads to the retention of TDP-43 transcripts in the nucleus.",
+            "biological_consequence": [
+              "Mutant Matrin-3 → Impaired TREX complex function → Nuclear retention of TDP-43 mRNA → Altered TDP-43 protein homeostasis → Contribution to ALS pathology"
+            ],
+            "specific_effects": [
+              "Expression of mutant Matrin-3 increases the nuclear-to-cytoplasmic ratio of TDP-43 mRNA."
+            ],
+            "evidence": [
+              {
+                "paper_title": "ALS Associated Mutations in Matrin 3 Alter Protein-Protein Interactions and Impede mRNA Nuclear Export",
+                "year": 2017,
+                "pmid": "29109432"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "29109432"
+            ],
+            "function_effect": "activation"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates",
+            "inhibits"
+          ]
+        },
+        "mechanism": "TDP-43 and Matrin-3 are both nuclear RNA-binding proteins that interact in an RNA-dependent manner and co-regulate the splicing and stability of target mRNAs. Matrin-3 is a component of the Transcription and Export (TREX) complex, which is involved in mRNA biogenesis and nuclear export.",
+        "effect": "The interaction between TDP-43 and Matrin-3 suggests they are part of a larger ribonucleoprotein complex that coordinates various aspects of RNA metabolism. Dysfunction of either protein can lead to overlapping pathological features seen in ALS.; ALS-associated mutations in Matrin-3 (e.g., S85C, T622A) cause defects in the nuclear export of specific mRNAs, including TDP-43 mRNA. This leads to the retention of TDP-43 transcripts in the nucleus.",
+        "summary": "TDP43 regulates Matrin-3 to regulate rna processing and tdp-43 mrna nuclear export, ultimately affecting neuronal homeostasis.",
+        "evidence": [
+          {
+            "paper_title": "Matrin 3 and TDP-43 function together to regulate neuroblastoma differentiation",
+            "year": 2020
+          },
+          {
+            "paper_title": "Matrin 3-dependent RNA granules are associated with ALS-linked proteins in neuronal cells",
+            "year": 2020
+          },
+          {
+            "paper_title": "ALS Associated Mutations in Matrin 3 Alter Protein-Protein Interactions and Impede mRNA Nuclear Export",
+            "year": 2017
+          }
+        ],
+        "interaction_effect": "regulation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 2
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--regulates--> Matrin-3:"
+      },
+      {
+        "primary": "C9orf72-DPRs",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Dipeptide repeat (DPR) proteins, particularly poly-GR and poly-PR, translated from the C9orf72 hexanucleotide repeat expansion, directly interact with TDP-43, promoting its aggregation and contributing to neurodegeneration.",
+        "functions": [
+          {
+            "function": "TDP-43 Aggregation",
+            "arrow": "activates",
+            "cellular_process": "Dipeptide repeat (DPR) proteins, particularly poly-glycine-arginine (poly-GR), translated from the C9orf72 repeat expansion, directly interact with TDP-43 and promote its misfolding and aggregation.",
+            "effect_description": "The arginine-rich DPRs (poly-GR and poly-PR) are highly toxic and act as potent seeds for TDP-43 aggregation. Poly-GR enhances TDP-43's propensity to form dense, insoluble aggregates, directly linking the C9orf72 mutation to TDP-43 pathology.",
+            "biological_consequence": [
+              "C9orf72 repeat expansion → Poly-GR production → Direct interaction with TDP-43 → Enhanced TDP-43 aggregation → Formation of cytoplasmic inclusions → Neurodegeneration"
+            ],
+            "specific_effects": [
+              "Poly-GR directly triggers the formation of TDP-43 aggregates.",
+              "Poly-GA inclusions can also induce the intracellular aggregation of phosphorylated TDP-43.",
+              "DPR accumulation, but not G4C2 RNA, is sufficient to cause TDP-43 proteinopathy in model systems.",
+              "Antisense oligonucleotides that reduce DPR production also lower the number of TDP-43 aggregates in a C9orf72 mouse model."
+            ],
+            "evidence": [
+              {
+                "paper_title": "A feedback loop between dipeptide-repeat protein, TDP-43 and karyopherin-α mediates C9orf72-related neurodegeneration",
+                "year": 2018,
+                "pmid": "30239641"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "30239641"
+            ],
+            "function_effect": "activation"
+          },
+          {
+            "function": "TDP-43 Nuclear Import",
+            "arrow": "inhibits",
+            "cellular_process": "Arginine-rich dipeptide repeat proteins (poly-GR, poly-PR) translated from the C9orf72 repeat expansion disrupt the nucleocytoplasmic transport machinery. They impair the structural integrity of the nucleus and cause the mislocalization of key transport factors like Ran and RanGAP.",
+            "effect_description": "This disruption of the nuclear import machinery prevents the efficient transport of TDP-43 into the nucleus, leading to its accumulation in the cytoplasm. This links the C9orf72 mutation to TDP-43 pathology via a transport defect, in addition to direct aggregation seeding.",
+            "biological_consequence": [
+              "C9orf72 DPR production → Disruption of nuclear pore and transport machinery → Impaired TDP-43 nuclear import → Cytoplasmic accumulation and aggregation of TDP-43 → Neurodegeneration"
+            ],
+            "specific_effects": [
+              "DPRs cause nuclear membrane disruption.",
+              "DPRs lead to the mislocalization of Ran and RanGAP.",
+              "The nuclear import defects are a fundamental mechanism of injury in C9-ALS/FTD.",
+              "Antisense oligonucleotides (ASOs) that reduce sense-strand C9orf72 RNA can rescue the transport defects and restore the proper TDP-43 nuclear-to-cytoplasmic gradient."
+            ],
+            "evidence": [
+              {
+                "paper_title": "C9orf72 dipeptides disrupt the nucleocytoplasmic transport machinery and cause TDP-43 mislocalisation to the cytoplasm",
+                "year": 2022,
+                "pmid": "35314728"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "35314728"
+            ],
+            "function_effect": "inhibition"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates",
+            "inhibits"
+          ]
+        },
+        "mechanism": "Dipeptide repeat (DPR) proteins, particularly poly-glycine-arginine (poly-GR), translated from the C9orf72 repeat expansion, directly interact with TDP-43 and promote its misfolding and aggregation. Arginine-rich dipeptide repeat proteins (poly-GR, poly-PR) translated from the C9orf72 repeat expansion disrupt the nucleocytoplasmic transport machinery. They impair the structural integrity of the nucleus and cause the mislocalization of key transport factors like Ran and RanGAP.",
+        "effect": "The arginine-rich DPRs (poly-GR and poly-PR) are highly toxic and act as potent seeds for TDP-43 aggregation. Poly-GR enhances TDP-43's propensity to form dense, insoluble aggregates, directly linking the C9orf72 mutation to TDP-43 pathology.; This disruption of the nuclear import machinery prevents the efficient transport of TDP-43 into the nucleus, leading to its accumulation in the cytoplasm. This links the C9orf72 mutation to TDP-43 pathology via a transport defect, in addition to direct aggregation seeding.",
+        "summary": "TDP43 regulates C9orf72-DPRs to regulate tdp-43 aggregation and tdp-43 nuclear import, ultimately affecting neurodegeneration.",
+        "evidence": [
+          {
+            "paper_title": "Key link uncovered between C9orf72 mutation and TDP-43 pathology in ALS/FTD",
+            "year": 2020
+          },
+          {
+            "paper_title": "C9orf72 poly(GR) aggregation induces TDP-43 proteinopathy",
+            "year": 2020
+          },
+          {
+            "paper_title": "A feedback loop between dipeptide-repeat protein, TDP-43 and karyopherin-α mediates C9orf72-related neurodegeneration",
+            "year": 2018
+          },
+          {
+            "paper_title": "C9orf72 dipeptides disrupt the nucleocytoplasmic transport machinery and cause TDP-43 mislocalisation to the cytoplasm",
+            "year": 2022
+          },
+          {
+            "paper_title": "The C9ORF72 repeat expansion disrupts nucleocytoplasmic transport",
+            "year": 2015
+          }
+        ],
+        "interaction_effect": "regulation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--regulates--> C9orf72-DPRs:"
+      },
+      {
+        "primary": "RACK1",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "The ribosomal protein RACK1 acts as a scaffold to recruit TDP-43 to polyribosomes. This interaction can lead to the repression of global protein synthesis when TDP-43 levels are elevated in the cytoplasm.",
+        "functions": [
+          {
+            "function": "Global Protein Synthesis",
+            "arrow": "inhibits",
+            "cellular_process": "TDP-43 interacts with the ribosomal protein RACK1, a scaffold on the 40S ribosomal subunit. This interaction allows TDP-43 to associate with polyribosomes.",
+            "effect_description": "When TDP-43 levels increase in the cytoplasm, its association with RACK1 on ribosomes leads to the repression of global protein synthesis. This suggests that cytoplasmic TDP-43 gains a toxic function as a general translational repressor.",
+            "biological_consequence": [
+              "Increased cytoplasmic TDP-43 → Binding to RACK1 on ribosomes → Repression of global translation → Impaired cellular homeostasis → Promotion of cytoplasmic inclusion formation"
+            ],
+            "specific_effects": [
+              "The interaction between TDP-43 and RACK1 mediates the binding of TDP-43 to the translational machinery.",
+              "Increased cytoplasmic TDP-43 represses global protein synthesis, an effect that can be rescued by RACK1 overexpression.",
+              "RACK1 co-localizes with TDP-43 in pathological inclusions in motor neurons of ALS patients.",
+              "Loss of ribosomal RACK1 reduces the formation of TDP-43 cytoplasmic inclusions."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Increased cytoplasmic TDP-43 reduces global protein synthesis by interacting with RACK1 on polyribosomes",
+                "year": 2017,
+                "pmid": "28158562"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "28158562"
+            ],
+            "function_effect": "inhibition"
+          }
+        ],
+        "arrow": "binds",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "inhibits"
+          ]
+        },
+        "mechanism": "TDP-43 interacts with the ribosomal protein RACK1, a scaffold on the 40S ribosomal subunit. This interaction allows TDP-43 to associate with polyribosomes.",
+        "effect": "When TDP-43 levels increase in the cytoplasm, its association with RACK1 on ribosomes leads to the repression of global protein synthesis. This suggests that cytoplasmic TDP-43 gains a toxic function as a general translational repressor.",
+        "summary": "TDP43 inhibits RACK1 to modulate global protein synthesis, ultimately affecting promotion of cytoplasmic inclusion formation.",
+        "evidence": [
+          {
+            "paper_title": "Increased cytoplasmic TDP-43 reduces global protein synthesis by interacting with RACK1 on polyribosomes",
+            "year": 2017
+          },
+          {
+            "paper_title": "Targeting RACK1 to alleviate TDP-43 and FUS proteinopathy-mediated suppression of protein translation and neurodegeneration",
+            "year": 2021
+          },
+          {
+            "paper_title": "Dysregulation of Translation in TDP-43 Proteinopathies: Deficits in the RNA Supply Chain and Local Protein Production",
+            "year": 2022
+          }
+        ],
+        "interaction_effect": "binding",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 1
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --binds--> RACK1:"
+      },
+      {
+        "primary": "PABPC1",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Poly(A)-binding protein cytoplasmic 1 (PABPC1) is a translation factor that co-precipitates with TDP-43 and is found in TDP-43 positive stress granules, indicating a role in regulating the translation of TDP-43 target mRNAs.",
+        "functions": [
+          {
+            "function": "Stress Granule Assembly",
+            "arrow": "activates",
+            "cellular_process": "Poly(A)-binding protein cytoplasmic 1 (PABPC1) is a core component of stress granules. TDP-43 co-localizes with PABPC1 in stress granules under conditions of cellular stress.",
+            "effect_description": "The presence of both TDP-43 and PABPC1 in stress granules indicates a functional link in the cellular stress response, where translation is stalled and mRNAs are sequestered. This co-localization may be a precursor to the formation of persistent pathological aggregates.",
+            "biological_consequence": [
+              "Cellular stress → TDP-43 and PABPC1 co-localization in stress granules → Sequestration of mRNAs → Translational repression → Potential for pathological aggregation"
+            ],
+            "specific_effects": [
+              "TDP-43 positive inclusions in ALS often contain stress granule-associated proteins, including PABPC1."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 Aggregation In Neurodegeneration: Are Stress Granules The Key?",
+                "year": 2011,
+                "pmid": "22405725"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "bidirectional",
+            "pmids": [
+              "22405725"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "complex",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "Poly(A)-binding protein cytoplasmic 1 (PABPC1) is a core component of stress granules. TDP-43 co-localizes with PABPC1 in stress granules under conditions of cellular stress.",
+        "effect": "The presence of both TDP-43 and PABPC1 in stress granules indicates a functional link in the cellular stress response, where translation is stalled and mRNAs are sequestered. This co-localization may be a precursor to the formation of persistent pathological aggregates.",
+        "summary": "TDP43 activates PABPC1 to modulate stress granule assembly, ultimately affecting potential for pathological aggregation.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 Aggregation In Neurodegeneration: Are Stress Granules The Key?",
+            "year": 2011
+          },
+          {
+            "paper_title": "Modulation of RNA-dependent interactions in stress granules prevents persistent TDP-43 accumulation in ALS/FTD",
+            "year": 2018
+          }
+        ],
+        "interaction_effect": "complex formation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 4
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--complex--> PABPC1:"
+      },
+      {
+        "primary": "Mitofusin 2",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 interacts in a complex with the mitochondrial fusion protein Mitofusin 2 (MFN2), and TDP-43 expression levels can alter MFN2 expression, affecting mitochondrial morphology.",
+        "functions": [
+          {
+            "function": "Mitochondrial Dynamics",
+            "arrow": "inhibits",
+            "cellular_process": "TDP-43 interacts with Mitofusin 2 (MFN2), a key protein regulating mitochondrial fusion. This interaction appears to influence mitochondrial morphology and transport.",
+            "effect_description": "Overexpression of TDP-43, particularly ALS-associated mutants, leads to reduced mitochondrial length (fragmentation) and impairs mitochondrial movement. This suggests that excess or mutant TDP-43 disrupts the normal function of MFN2, leading to mitochondrial dysfunction. Co-expression of MFN2 can rescue these defects.",
+            "biological_consequence": [
+              "Mutant TDP-43 interacts with MFN2 → Impaired mitochondrial fusion → Mitochondrial fragmentation and transport defects → Mitochondrial dysfunction → Neuronal damage"
+            ],
+            "specific_effects": [
+              "TDP-43 interacts in a complex with MFN2 in human brain tissue.",
+              "Overexpression of wild-type and mutant TDP-43 reduces mitochondrial length and density in motor neuron neurites.",
+              "Co-expression of MFN2 can abolish TDP-43-induced abnormalities in mitochondrial dynamics and function.",
+              "Knockdown of TDP-43 leads to a reduction in MFN2 protein levels."
+            ],
+            "evidence": [
+              {
+                "paper_title": "The ALS disease-associated mutant TDP-43 impairs mitochondrial dynamics and function in motor neurons",
+                "year": 2013,
+                "pmid": "23827948"
+              },
+              {
+                "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+                "year": 2018,
+                "pmid": "29715546"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "23827948",
+              "29715546"
+            ]
+          }
+        ],
+        "arrow": "inhibits",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "inhibits"
+          ]
+        },
+        "mechanism": "TDP-43 interacts with Mitofusin 2 (MFN2), a key protein regulating mitochondrial fusion. This interaction appears to influence mitochondrial morphology and transport.",
+        "effect": "Overexpression of TDP-43, particularly ALS-associated mutants, leads to reduced mitochondrial length (fragmentation) and impairs mitochondrial movement. This suggests that excess or mutant TDP-43 disrupts the normal function of MFN2, leading to mitochondrial dysfunction. Co-expression of MFN2 can rescue these defects.",
+        "summary": "TDP43 inhibits Mitofusin 2 to modulate mitochondrial dynamics, ultimately affecting neuronal damage.",
+        "evidence": [
+          {
+            "paper_title": "The ALS disease-associated mutant TDP-43 impairs mitochondrial dynamics and function in motor neurons",
+            "year": 2013
+          },
+          {
+            "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+            "year": 2018
+          }
+        ],
+        "arrow_notation": "TDP43 --inhibits--> Mitofusin 2:"
+      },
+      {
+        "primary": "PHB2",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Proteomics screens identified the crucial mitophagy receptor Prohibitin 2 (PHB2) as a mitochondrial interacting partner of TDP-43.",
+        "functions": [
+          {
+            "function": "Mitophagy",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 interacts with Prohibitin 2 (PHB2), a crucial receptor protein on the inner mitochondrial membrane involved in initiating mitophagy (the selective autophagic clearance of damaged mitochondria).",
+            "effect_description": "This interaction suggests TDP-43 plays a role in mitochondrial quality control. Overexpression of TDP-43 increases PHB2 levels, while TDP-43 knockdown reduces them, particularly during induced mitophagy. This indicates TDP-43 may be required for an efficient mitophagy response.",
+            "biological_consequence": [
+              "Mitochondrial damage → TDP-43/PHB2 interaction → Efficient mitophagy → Removal of damaged mitochondria → Maintained cellular health"
+            ],
+            "specific_effects": [
+              "Proteomics screens identified PHB2 as a mitochondrial interacting partner of TDP-43.",
+              "TDP-43 overexpression leads to an increase in PHB2, while its knockdown reduces PHB2 expression during CCCP-induced mitophagy.",
+              "The interaction between TDP-43 and PHB2 suggests a role for TDP-43 in Parkin-mediated mitophagy."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+                "year": 2018,
+                "pmid": "29715546"
+              },
+              {
+                "paper_title": "TDP-43 proteinopathy and mitochondrial abnormalities in neurodegeneration",
+                "year": 2020,
+                "pmid": "31445085"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "29715546",
+              "31445085"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 interacts with Prohibitin 2 (PHB2), a crucial receptor protein on the inner mitochondrial membrane involved in initiating mitophagy (the selective autophagic clearance of damaged mitochondria).",
+        "effect": "This interaction suggests TDP-43 plays a role in mitochondrial quality control. Overexpression of TDP-43 increases PHB2 levels, while TDP-43 knockdown reduces them, particularly during induced mitophagy. This indicates TDP-43 may be required for an efficient mitophagy response.",
+        "summary": "TDP43 activates PHB2 to modulate mitophagy, ultimately affecting maintained cellular health.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+            "year": 2018
+          },
+          {
+            "paper_title": "TDP-43 proteinopathy and mitochondrial abnormalities in neurodegeneration",
+            "year": 2020
+          }
+        ],
+        "interaction_effect": "regulation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 2
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --regulates--> PHB2:"
+      },
+      {
+        "primary": "VDAC1",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 interacts with the Voltage-gated anion channel 1 (VDAC1), a protein on the outer mitochondrial membrane that is involved in mitophagy.",
+        "functions": [
+          {
+            "function": "Mitochondrial Integrity",
+            "arrow": "inhibits",
+            "cellular_process": "TDP-43 interacts with Voltage-gated anion channel 1 (VDAC1), a protein on the outer mitochondrial membrane that regulates the passage of ions and metabolites and is involved in apoptosis and mitophagy.",
+            "effect_description": "In disease states, mislocalized cytoplasmic TDP-43 interacts with VDAC1. This interaction is linked to mitochondrial dysfunction, including the aberrant release of mitochondrial DNA (mtDNA) into the cytosol, which can trigger an inflammatory response.",
+            "biological_consequence": [
+              "Cytoplasmic TDP-43 → Interaction with VDAC1 → VDAC1 oligomerization / mPTP opening → Release of mtDNA into cytosol → cGAS-STING pathway activation → Pro-inflammatory gene expression → Cell death"
+            ],
+            "specific_effects": [
+              "TDP-43 was found to interact with VDAC1 in proteomics screens.",
+              "In TDP-43 related ALS, mislocalized TDP-43 interacts with VDAC1, resulting in aberrant mtDNA release to the cytosol.",
+              "Inhibition of VDAC1 oligomerization can prevent the cytosolic accumulation of mtDNA and inflammation in ALS patient-derived motor neurons."
+            ],
+            "evidence": [
+              {
+                "paper_title": "VDAC1: A Key Player in the Mitochondrial Landscape of Neurodegeneration",
+                "year": 2024,
+                "pmid": "39858428"
+              },
+              {
+                "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+                "year": 2018,
+                "pmid": "29715546"
+              },
+              {
+                "paper_title": "Mitochondrion-Dependent Cell Death in TDP-43 Proteinopathies",
+                "year": 2021,
+                "pmid": "33918437"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "39858428",
+              "29715546",
+              "33918437"
+            ],
+            "function_effect": "inhibition"
+          }
+        ],
+        "arrow": "activates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "inhibits"
+          ]
+        },
+        "mechanism": "TDP-43 interacts with Voltage-gated anion channel 1 (VDAC1), a protein on the outer mitochondrial membrane that regulates the passage of ions and metabolites and is involved in apoptosis and mitophagy.",
+        "effect": "In disease states, mislocalized cytoplasmic TDP-43 interacts with VDAC1. This interaction is linked to mitochondrial dysfunction, including the aberrant release of mitochondrial DNA (mtDNA) into the cytosol, which can trigger an inflammatory response.",
+        "summary": "TDP43 inhibits VDAC1 to modulate mitochondrial integrity, ultimately affecting cell death.",
+        "evidence": [
+          {
+            "paper_title": "VDAC1: A Key Player in the Mitochondrial Landscape of Neurodegeneration",
+            "year": 2024
+          },
+          {
+            "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+            "year": 2018
+          },
+          {
+            "paper_title": "Mitochondrion-Dependent Cell Death in TDP-43 Proteinopathies",
+            "year": 2021
+          }
+        ],
+        "interaction_effect": "activates",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 2
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --activates--> VDAC1:"
+      },
+      {
+        "primary": "UPF1",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 loss of function leads to the inclusion of cryptic exons, which often creates premature termination codons. These transcripts are degraded by the nonsense-mediated mRNA decay (NMD) pathway, of which UPF1 is a key component.",
+        "functions": [
+          {
+            "function": "Nonsense-Mediated mRNA Decay",
+            "arrow": "inhibits",
+            "cellular_process": "Loss of nuclear TDP-43 function leads to the inclusion of cryptic exons in numerous transcripts, many of which introduce premature termination codons (PTCs). UPF1 is the central helicase of the nonsense-mediated mRNA decay (NMD) pathway, which recognizes and degrades these aberrant PTC-containing transcripts.",
+            "effect_description": "TDP-43 and the NMD pathway are functionally linked. When TDP-43 function is lost, the NMD pathway, with UPF1 as a key component, becomes critical for clearing the resulting aberrant mRNAs to prevent the translation of truncated, potentially toxic proteins.",
+            "biological_consequence": [
+              "Loss of TDP-43 → Cryptic exon inclusion with PTC → UPF1 recognizes PTC-containing mRNA → NMD pathway degrades aberrant transcript → Cellular quality control is maintained"
+            ],
+            "specific_effects": [
+              "Many cryptic exons exposed by TDP-43 depletion are targets for NMD.",
+              "Inhibition of the NMD pathway in TDP-43 depleted cells leads to the accumulation of cryptic exon-containing transcripts."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A",
+                "year": 2022,
+                "pmid": "35197628"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "35197628"
+            ],
+            "function_effect": "inhibition",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "inhibits",
+              "net_from": "TDP43",
+              "net_arrow": "inhibits",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "inhibits",
+            "direct_arrow": "inhibits",
+            "net_effect": "inhibition",
+            "direct_effect": "inhibition"
+          }
+        ],
+        "arrow": "inhibits",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "Loss of nuclear TDP-43 function leads to the inclusion of cryptic exons in numerous transcripts, many of which introduce premature termination codons (PTCs). UPF1 is the central helicase of the nonsense-mediated mRNA decay (NMD) pathway, which recognizes and degrades these aberrant PTC-containing transcripts.",
+        "effect": "TDP-43 and the NMD pathway are functionally linked. When TDP-43 function is lost, the NMD pathway, with UPF1 as a key component, becomes critical for clearing the resulting aberrant mRNAs to prevent the translation of truncated, potentially toxic proteins.",
+        "summary": "TDP43 activates UPF1 to modulate nonsense-mediated mrna decay, ultimately affecting cellular quality control is maintained.",
+        "evidence": [
+          {
+            "paper_title": "TDP-43 loss and ALS-risk SNPs drive mis-splicing and depletion of UNC13A",
+            "year": 2022
+          },
+          {
+            "paper_title": "Nonsense-mediated mRNA decay yields a toxic protein fragment in a mouse model of TDP-43 proteinopathy",
+            "year": 2021
+          }
+        ],
+        "interaction_effect": "inhibition",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 --inhibits--> UPF1:"
+      },
+      {
+        "primary": "SFPQ",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Splicing factor proline- and glutamine-rich (SFPQ) was identified as a common interactor of both wild-type and cytoplasmic (ΔNLS) TDP-43 using a proximity-dependent biotin identification (BioID) method.",
+        "functions": [
+          {
+            "function": "Paraspeckle Assembly",
+            "arrow": "inhibits",
+            "cellular_process": "TDP-43 binds to the NEAT1 pre-lncRNA and promotes its polyadenylation to produce the short isoform (NEAT1_1), which does not scaffold paraspeckles. SFPQ is a core component of these nuclear bodies.",
+            "effect_description": "By promoting the short NEAT1_1 isoform, TDP-43 effectively represses the formation of paraspeckles. Loss of nuclear TDP-43 function shifts the balance towards the long, scaffolding NEAT1_2 isoform, leading to hyper-assembly of paraspeckles, which then sequester other RNA-binding proteins, including SFPQ and TDP-43 itself.",
+            "biological_consequence": [
+              "Loss of TDP-43 → Increased NEAT1_2 lncRNA → Hyper-assembly of paraspeckles → Sequestration of SFPQ and other RBPs → Altered nuclear RNA processing and cellular stress"
+            ],
+            "specific_effects": [
+              "Loss of TDP-43 function is a primary driver of paraspeckle hyper-assembly in ALS.",
+              "NEAT1_2 sequesters TDP-43 away from mRNAs in differentiated cells.",
+              "Paraspeckle hyper-assembly may be a protective response in cells with compromised miRNA/dsRNA metabolism."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Cross-Regulation between TDP-43 and Paraspeckles Promotes Pluripotency-Differentiation Transition",
+                "year": 2019,
+                "pmid": "31047794"
+              },
+              {
+                "paper_title": "Protective paraspeckle hyper-assembly downstream of TDP-43 loss of function in amyotrophic lateral sclerosis",
+                "year": 2018,
+                "pmid": "29859124"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "31047794",
+              "29859124"
+            ]
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates",
+            "inhibits"
+          ]
+        },
+        "mechanism": "SFPQ is a multifunctional DNA/RNA-binding protein involved in splicing and transcription. It interacts with TDP-43, suggesting they are part of shared nuclear protein complexes that regulate gene expression. TDP-43 binds to the NEAT1 pre-lncRNA and promotes its polyadenylation to produce the short isoform (NEAT1_1), which does not scaffold paraspeckles. SFPQ is a core component of these nuclear bodies.",
+        "effect": "The interaction between TDP-43 and SFPQ points to a cooperative role in RNA metabolism. Both proteins are components of paraspeckles and are involved in maintaining neuronal integrity. The loss of this interaction due to TDP-43 mislocalization could disrupt these functions.; By promoting the short NEAT1_1 isoform, TDP-43 effectively represses the formation of paraspeckles. Loss of nuclear TDP-43 function shifts the balance towards the long, scaffolding NEAT1_2 isoform, leading to hyper-assembly of paraspeckles, which then sequester other RNA-binding proteins, including SFPQ and TDP-43 itself.",
+        "summary": "TDP43 regulates SFPQ to regulate rna processing and paraspeckle assembly, ultimately affecting neuronal health.",
+        "evidence": [
+          {
+            "paper_title": "The nuclear interactome of TDP-43, a protein involved in amyotrophic lateral sclerosis, reveals a functional association with the splicing factor SFPQ",
+            "year": 2017
+          },
+          {
+            "paper_title": "Cross-Regulation between TDP-43 and Paraspeckles Promotes Pluripotency-Differentiation Transition",
+            "year": 2019
+          },
+          {
+            "paper_title": "Protective paraspeckle hyper-assembly downstream of TDP-43 loss of function in amyotrophic lateral sclerosis",
+            "year": 2018
+          }
+        ],
+        "interaction_effect": "regulation",
+        "arrow_notation": "TDP43 <--regulates--> SFPQ:"
+      },
+      {
+        "primary": "TBK1",
+        "interaction_type": "indirect",
+        "upstream_interactor": "OPTN",
+        "mediator_chain": [
+          "OPTN"
+        ],
+        "depth": 2,
+        "support_summary": "TANK-binding kinase 1 (TBK1) is a kinase that regulates autophagy and inflammation. Loss-of-function mutations in TBK1 are a genetic cause of ALS and lead to TDP-43 pathology. TBK1 phosphorylates autophagy receptors like OPTN and p62 to initiate clearance of protein aggregates, and TBK1 deficiency impairs this process, leading to TDP-43 accumulation.",
+        "functions": [
+          {
+            "function": "Autophagy",
+            "arrow": "inhibits",
+            "cellular_process": "TANK-binding kinase 1 (TBK1) is a key kinase that initiates autophagy by phosphorylating autophagy receptors, including OPTN and SQSTM1/p62. This phosphorylation enhances their ability to bind cargo (like ubiquitinated TDP-43) and the autophagosome.",
+            "effect_description": "Loss-of-function mutations in TBK1, which cause ALS, impair the initiation of autophagy. This leads to a failure in the clearance of protein aggregates, resulting in the accumulation of TDP-43. TBK1 deficiency also causes lysosomal dysfunction, further compounding the clearance deficit.",
+            "biological_consequence": [
+              "TBK1 haploinsufficiency → Impaired phosphorylation of OPTN/p62 → Defective autophagic clearance → Accumulation of TDP-43 aggregates → Neurodegeneration"
+            ],
+            "specific_effects": [
+              "Loss-of-function mutations in TBK1 are a genetic cause of ALS and FTD.",
+              "TBK1 deficiency is sufficient to cause TDP-43 pathology in human motor neurons.",
+              "The TDP-43 pathology in TBK1-deficient models results from a dysfunctional endo-lysosomal pathway, not just autophagy inhibition."
+            ],
+            "evidence": [
+              {
+                "paper_title": "A TBK1 variant causes autophagolysosomal and motoneuron pathology without neuroinflammation in mice",
+                "year": 2024,
+                "pmid": "38517332"
+              }
+            ],
+            "_context": {
+              "type": "chain",
+              "query_protein": null,
+              "chain": [
+                "OPTN"
+              ]
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "38517332"
+            ],
+            "direct_arrow": "activates",
+            "function_effect": "inhibition",
+            "arrow_context": {
+              "direct_from": "OPTN",
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "inhibits",
+              "mediator_chain": [
+                "OPTN"
+              ],
+              "is_indirect": true
+            },
+            "net_arrow": "inhibits",
+            "net_effect": "inhibition",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "inhibits",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TANK-binding kinase 1 (TBK1) is a key kinase that initiates autophagy by phosphorylating autophagy receptors, including OPTN and SQSTM1/p62. This phosphorylation enhances their ability to bind cargo (like ubiquitinated TDP-43) and the autophagosome.",
+        "effect": "Loss-of-function mutations in TBK1, which cause ALS, impair the initiation of autophagy. This leads to a failure in the clearance of protein aggregates, resulting in the accumulation of TDP-43. TBK1 deficiency also causes lysosomal dysfunction, further compounding the clearance deficit.",
+        "summary": "TDP43 activates TBK1 to modulate autophagy, ultimately affecting neurodegeneration.",
+        "evidence": [
+          {
+            "paper_title": "Loss of TBK1 activity leads to TDP-43 proteinopathy through lysosomal dysfunction in human motor neurons",
+            "year": 2021
+          },
+          {
+            "paper_title": "The Role of TBK1 Inhibition in TDP-43 Pathology: A Technical Guide for Researchers",
+            "year": 2025
+          },
+          {
+            "paper_title": "A TBK1 variant causes autophagolysosomal and motoneuron pathology without neuroinflammation in mice",
+            "year": 2024
+          }
+        ],
+        "_linked_mediator_interaction": "OPTN->TBK1",
+        "interaction_effect": "inhibits",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 3
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "OPTN --inhibits--> TBK1:"
+      },
+      {
+        "primary": "PFN1",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "Mutations in Profilin 1 (PFN1) cause familial ALS. Mutant PFN1 forms cytoplasmic aggregates that sequester endogenous TDP-43, promoting its conversion into a prion-like, aggregated state.",
+        "functions": [
+          {
+            "function": "TDP-43 Aggregation",
+            "arrow": "activates",
+            "cellular_process": "Profilin 1 (PFN1) is an actin-binding protein, and mutations in PFN1 cause familial ALS. Mutant PFN1 forms cytoplasmic aggregates that are positive for ubiquitin and p62.",
+            "effect_description": "These mutant PFN1 aggregates act as a scaffold to sequester endogenous TDP-43. This sequestration promotes the conversion of soluble TDP-43 into a prion-like, insoluble, and phosphorylated state, thereby inducing TDP-43 pathology.",
+            "biological_consequence": [
+              "Mutant PFN1 expression → Formation of cytoplasmic PFN1 aggregates → Sequestration of endogenous TDP-43 → Seed-dependent aggregation of TDP-43 → Formation of co-aggregates → Neurotoxicity"
+            ],
+            "specific_effects": [
+              "Cytoplasmic aggregates of mutant PFN1 co-stain with TDP-43.",
+              "Expression of mutant PFN1 increases the levels of detergent-insoluble and phosphorylated TDP-43.",
+              "Insoluble fractions from cells with mutant PFN1 can seed the aggregation of TDP-43 in other cells."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Profilin 1 mutants form aggregates that induce accumulation of prion-like TDP-43",
+                "year": 2016,
+                "pmid": "27432186"
+              },
+              {
+                "paper_title": "Mutations in the Profilin 1 Gene Cause Familial Amyotrophic Lateral Sclerosis",
+                "year": 2012,
+                "pmid": "22801503"
+              },
+              {
+                "paper_title": "Gain-of-function profilin 1 mutations linked to familial amyotrophic lateral sclerosis cause seed-dependent intracellular TDP-43 aggregation",
+                "year": 2016,
+                "pmid": "26908597"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "27432186",
+              "22801503",
+              "26908597"
+            ],
+            "function_effect": "activation"
+          },
+          {
+            "function": "Protein Degradation",
+            "arrow": "inhibits",
+            "cellular_process": "Mutant PFN1 aggregates sequester components of the protein quality control machinery, interfering with both the ubiquitin-proteasome system and autophagy.",
+            "effect_description": "The formation of mutant PFN1 aggregates impairs proteasomal and autophagic clearance. For autophagy, PFN1 aggregates suppress the conversion of LC3-I to LC3-II, an essential step in autophagosome formation. This general impairment of protein degradation facilitates the accumulation of other aggregation-prone proteins, like TDP-43.",
+            "biological_consequence": [
+              "Mutant PFN1 aggregation → Impairment of proteasome and autophagy pathways → Reduced clearance of misfolded proteins → Enhanced accumulation of TDP-43 aggregates → Increased cytotoxicity"
+            ],
+            "specific_effects": [
+              "TDP-43 accumulation is facilitated in the presence of proteasome or lysosome inhibitors when mutant PFN1 is expressed.",
+              "Mutant PFN1 aggregates suppress the conversion of LC3-I to LC3-II."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Profilin 1 mutants form aggregates that induce accumulation of prion-like TDP-43",
+                "year": 2016,
+                "pmid": "27432186"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "inhibits",
+            "direction": "main_to_primary",
+            "interaction_direction": "primary_to_main",
+            "pmids": [
+              "27432186"
+            ],
+            "function_effect": "inhibition"
+          }
+        ],
+        "arrow": "activates",
+        "direction": "primary_to_main",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates",
+            "inhibits"
+          ]
+        },
+        "mechanism": "Profilin 1 (PFN1) is an actin-binding protein, and mutations in PFN1 cause familial ALS. Mutant PFN1 forms cytoplasmic aggregates that are positive for ubiquitin and p62. Mutant PFN1 aggregates sequester components of the protein quality control machinery, interfering with both the ubiquitin-proteasome system and autophagy.",
+        "effect": "These mutant PFN1 aggregates act as a scaffold to sequester endogenous TDP-43. This sequestration promotes the conversion of soluble TDP-43 into a prion-like, insoluble, and phosphorylated state, thereby inducing TDP-43 pathology.; The formation of mutant PFN1 aggregates impairs proteasomal and autophagic clearance. For autophagy, PFN1 aggregates suppress the conversion of LC3-I to LC3-II, an essential step in autophagosome formation. This general impairment of protein degradation facilitates the accumulation of other aggregation-prone proteins, like TDP-43.",
+        "summary": "TDP43 regulates PFN1 to regulate tdp-43 aggregation and protein degradation, ultimately affecting neurotoxicity.",
+        "evidence": [
+          {
+            "paper_title": "Profilin 1 mutants form aggregates that induce accumulation of prion-like TDP-43",
+            "year": 2016
+          },
+          {
+            "paper_title": "Mutations in the Profilin 1 Gene Cause Familial Amyotrophic Lateral Sclerosis",
+            "year": 2012
+          },
+          {
+            "paper_title": "Gain-of-function profilin 1 mutations linked to familial amyotrophic lateral sclerosis cause seed-dependent intracellular TDP-43 aggregation",
+            "year": 2016
+          },
+          {
+            "paper_title": "Profilin 1 mutants form aggregates that induce accumulation of prion-like TDP-43",
+            "year": 2016
+          }
+        ],
+        "interaction_effect": "activation",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 4
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--activates-- PFN1:"
+      },
+      {
+        "primary": "Caspase-3",
+        "interaction_type": "indirect",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 can be cleaved by caspases, including Caspase-3, at several sites. This cleavage generates C-terminal fragments that are prone to aggregation and are a key feature of TDP-43 pathology in disease.",
+        "functions": [
+          {
+            "function": "Apoptosis",
+            "arrow": "activates",
+            "cellular_process": "Overexpression of TDP-43 alters the transcriptional regulation of key apoptosis-related genes in the Bcl-2 family.",
+            "effect_description": "TDP-43 enhances the promoter activity and mRNA expression of the pro-apoptotic protein Bim, while decreasing the mRNA and protein levels of the anti-apoptotic protein Bcl-xL. This shift in the balance of Bcl-2 family proteins promotes the activation of the apoptotic cascade.",
+            "biological_consequence": [
+              "TDP-43 overexpression → Increased Bim / Decreased Bcl-xL → Mitochondrial outer membrane permeabilization → Caspase activation → Apoptotic cell death"
+            ],
+            "specific_effects": [
+              "A 2-5 fold increase in TDP-43 expression is sufficient to induce death in neuronal cells.",
+              "Silencing Bim expression with siRNA can attenuate TDP-43-induced cell death.",
+              "Caspase-mediated cleavage of TDP-43 may be a feedback mechanism to attenuate its toxicity, as the resulting fragments are less potent at inducing cell death."
+            ],
+            "evidence": [
+              {
+                "paper_title": "TDP-43-induced death is associated with altered regulation of BIM and Bcl-xL and attenuated by caspase-mediated TDP-43 cleavage",
+                "year": 2011,
+                "pmid": "21339291"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "21339291"
+            ],
+            "function_effect": "activation",
+            "arrow_context": {
+              "direct_from": null,
+              "direct_arrow": "activates",
+              "net_from": "TDP43",
+              "net_arrow": "activates",
+              "mediator_chain": [],
+              "is_indirect": true
+            },
+            "net_arrow": "activates",
+            "direct_arrow": "activates",
+            "net_effect": "activation",
+            "direct_effect": "activation"
+          }
+        ],
+        "arrow": "regulates",
+        "direction": "bidirectional",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "During cellular stress and apoptosis, activated caspases, including Caspase-3, can cleave full-length TDP-43 at specific sites. Overexpression of TDP-43 alters the transcriptional regulation of key apoptosis-related genes in the Bcl-2 family.",
+        "effect": "This cleavage generates several C-terminal fragments (CTFs) of TDP-43, most notably a ~25 kDa fragment. These CTFs lack the nuclear localization signal, are highly prone to aggregation, and are a major component of the pathological inclusions found in patient neurons, representing a key step in TDP-43 pathology.; TDP-43 enhances the promoter activity and mRNA expression of the pro-apoptotic protein Bim, while decreasing the mRNA and protein levels of the anti-apoptotic protein Bcl-xL. This shift in the balance of Bcl-2 family proteins promotes the activation of the apoptotic cascade.",
+        "summary": "TDP43 activates Caspase-3 to regulate tdp-43 cleavage and apoptosis, ultimately affecting cellular toxicity.",
+        "evidence": [
+          {
+            "paper_title": "Caspase-4 cleaves TAR DNA-binding protein 43 in the execution phase of apoptosis",
+            "year": 2011
+          },
+          {
+            "paper_title": "TDP-43 C-terminal fragments are generated by caspase-3 and calpain and accumulate in the nucleus and cytoplasm of cultured cells",
+            "year": 2010
+          },
+          {
+            "paper_title": "TDP-43-induced death is associated with altered regulation of BIM and Bcl-xL and attenuated by caspase-mediated TDP-43 cleavage",
+            "year": 2011
+          }
+        ],
+        "interaction_effect": "regulates",
+        "_validation_metadata": {
+          "validated": true,
+          "validator": "arrow_effect_validator",
+          "corrections_applied": 4
+        },
+        "_arrow_validated": true,
+        "arrow_notation": "TDP43 <--regulates--> Caspase-3:"
+      },
+      {
+        "primary": "XRCC4",
+        "interaction_type": "direct",
+        "upstream_interactor": null,
+        "mediator_chain": [],
+        "depth": 1,
+        "support_summary": "TDP-43 is a key component of the non-homologous end joining (NHEJ) pathway for DNA double-strand break repair. It acts as a scaffold to recruit the XRCC4/DNA Ligase 4 complex to sites of DNA damage.",
+        "functions": [
+          {
+            "function": "DNA Double-Strand Break Repair",
+            "arrow": "activates",
+            "cellular_process": "TDP-43 is a critical component of the non-homologous end joining (NHEJ) pathway for repairing DNA double-strand breaks (DSBs). It is recruited to sites of DNA damage.",
+            "effect_description": "TDP-43 acts as a scaffold to recruit the XRCC4/DNA Ligase 4 complex to the site of the break. This recruitment is essential for the final, rate-limiting step of ligating the broken DNA ends. Loss of nuclear TDP-43 impairs this process, leading to the accumulation of DNA damage.",
+            "biological_consequence": [
+              "DNA double-strand break → TDP-43 recruitment to damage site → Scaffolding and recruitment of XRCC4/Ligase 4 complex → Efficient NHEJ repair → Maintenance of genomic stability"
+            ],
+            "specific_effects": [
+              "Loss of nuclear TDP-43 function impairs the recruitment of the XRCC4-DNA ligase 4 complex to DSB sites.",
+              "TDP-43 depletion leads to reduced NHEJ efficiency and an accumulation of unrepaired DSBs.",
+              "In ALS, TDP-43 mislocalization may trap the XRCC4/Ligase 4 complex in the cytoplasm, preventing its nuclear function."
+            ],
+            "evidence": [
+              {
+                "paper_title": "Motor neuron disease-associated loss of nuclear TDP-43 is linked to DNA double-strand break repair defects",
+                "year": 2019,
+                "pmid": "30770445"
+              },
+              {
+                "paper_title": "A Commentary on TDP-43 and DNA Damage Response in Amyotrophic Lateral Sclerosis.",
+                "year": 2019,
+                "pmid": "31656396"
+              }
+            ],
+            "_context": {
+              "type": "direct",
+              "query_protein": null,
+              "chain": null
+            },
+            "interaction_effect": "activates",
+            "direction": "main_to_primary",
+            "interaction_direction": "main_to_primary",
+            "pmids": [
+              "30770445",
+              "31656396"
+            ]
+          }
+        ],
+        "arrow": "activates",
+        "direction": "main_to_primary",
+        "intent": "regulation",
+        "arrows": {
+          "main_to_primary": [
+            "activates"
+          ]
+        },
+        "mechanism": "TDP-43 is a critical component of the non-homologous end joining (NHEJ) pathway for repairing DNA double-strand breaks (DSBs). It is recruited to sites of DNA damage.",
+        "effect": "TDP-43 acts as a scaffold to recruit the XRCC4/DNA Ligase 4 complex to the site of the break. This recruitment is essential for the final, rate-limiting step of ligating the broken DNA ends. Loss of nuclear TDP-43 impairs this process, leading to the accumulation of DNA damage.",
+        "summary": "TDP43 activates XRCC4 to modulate dna double-strand break repair, ultimately affecting maintenance of genomic stability.",
+        "evidence": [
+          {
+            "paper_title": "Motor neuron disease-associated loss of nuclear TDP-43 is linked to DNA double-strand break repair defects",
+            "year": 2019
+          },
+          {
+            "paper_title": "A Commentary on TDP-43 and DNA Damage Response in Amyotrophic Lateral Sclerosis.",
+            "year": 2019
+          },
+          {
+            "paper_title": "TDP-43 facilitates recruitment and activity of the NHEJ ligation",
+            "year": null
+          }
+        ],
+        "arrow_notation": "TDP43 --activates--> XRCC4:"
+      }
+    ],
+    "interactor_history": [
+      "hnRNPA1",
+      "hnRNPA2/B1",
+      "FUS",
+      "Ataxin-2",
+      "TIA-1",
+      "G3BP1",
+      "SQSTM1/p62",
+      "VCP",
+      "UBQLN2",
+      "Parkin",
+      "Drosha",
+      "NEFL",
+      "TAF15",
+      "hnRNPC1/C2",
+      "ATG7",
+      "ATG4B",
+      "HDAC6",
+      "Importin-α",
+      "Exportin-1",
+      "Ran",
+      "Matrin-3",
+      "C9orf72-DPRs",
+      "RACK1",
+      "PABPC1",
+      "Angiogenin",
+      "Mitofusin 2",
+      "PHB2",
+      "VDAC1",
+      "SOD1",
+      "EWSR1",
+      "UPF1",
+      "PARP1",
+      "SFPQ",
+      "PTBP1",
+      "OPTN",
+      "TBK1",
+      "PFN1",
+      "Caspase-3",
+      "XRCC4"
+    ],
+    "search_history": [
+      "TDP-43 protein interactors",
+      "TDP-43 binding partners",
+      "TDP-43 stress granule components",
+      "TDP-43 ubiquitination pathway",
+      "TDP-43 autophagy regulation",
+      "TDP-43 nuclear import/export partners",
+      "TDP-43 RNA metabolism interactors",
+      "TDP-43 and neurofilament",
+      "TDP-43 and FUS interaction",
+      "TDP-43 and hnRNPA1 interaction",
+      "TDP-43 and valosin-containing protein (VCP) interaction",
+      "TDP-43 and proteasome pathway",
+      "TDP-43 and chaperone proteins",
+      "TDP-43 and ataxin-2",
+      "TDP-43 and SQSTM1/p62 interaction",
+      "TDP-43 interactors nuclear transport",
+      "TDP-43 and RAN GTPase",
+      "TDP-43 splicing factor interactors",
+      "TDP-43 and Matrin-3 interaction",
+      "TDP-43 and C9orf72 dipeptide repeat interaction",
+      "TDP-43 and SOD1 interaction",
+      "TDP-43 mitochondrial protein interactors",
+      "TDP-43 translation regulation partners",
+      "TDP-43 and Angiogenin interaction",
+      "TDP-43 and RACK1 interaction",
+      "TDP-43 interactome mass spectrometry",
+      "TDP-43 DNA damage response interactors",
+      "TDP-43 nonsense-mediated decay partners",
+      "TDP-43 and EWSR1 interaction",
+      "TDP-43 and PARP1",
+      "TDP-43 and OPTN interaction",
+      "TDP-43 and TBK1",
+      "TDP-43 and PFN1",
+      "TDP-43 and Caspase-3",
+      "TDP-43 and spliceosome interactors",
+      "TDP-43 UBQLN2 protein clearance",
+      "TDP-43 Parkin ubiquitination mechanism",
+      "TDP-43 regulation of Parkin mRNA",
+      "TDP-43 Drosha microRNA processing function",
+      "TDP-43 NEFL mRNA stability mechanism",
+      "TDP-43 TAF15 function stress granules",
+      "TDP-43 hnRNPC splicing regulation",
+      "TDP-43 ATG7 mRNA stability and autophagy",
+      "TDP-43 ATG4B cryptic exon and autophagy",
+      "TDP-43 HDAC6 aggregate clearance dynein",
+      "TDP-43 regulation of HDAC6 mRNA",
+      "TDP-43 Importin-α nuclear import mechanism",
+      "TDP-43 Exportin-1 nuclear export signal",
+      "TDP-43 Ran-GTPase nucleocytoplasmic transport",
+      "TDP-43 Matrin-3 functional interaction ALS",
+      "TDP-43 and C9orf72 dipeptide repeat proteins interaction",
+      "TDP-43 RACK1 ribosomal interaction and translation",
+      "TDP-43 PABPC1 stress granules and translation",
+      "TDP-43 Angiogenin stress granule formation",
+      "TDP-43 Mitofusin 2 mitochondrial morphology",
+      "TDP-43 Prohibitin 2 (PHB2) mitophagy",
+      "TDP-43 VDAC1 mitochondrial interaction",
+      "mutant SOD1 and TDP-43 cross-seeding pathology",
+      "TDP-43 EWSR1 functional overlap in ALS",
+      "TDP-43 cryptic exons and UPF1 nonsense-mediated decay",
+      "PARP1 and PAR in TDP-43 cytoplasmic translocation and aggregation",
+      "TDP-43 SFPQ interaction and function",
+      "TDP-43 PTBP1 co-regulation of splicing",
+      "Optineurin (OPTN) in autophagic clearance of TDP-43",
+      "TBK1 role in TDP-43 pathology and autophagy",
+      "mutant Profilin 1 (PFN1) and TDP-43 aggregation",
+      "Caspase-3 cleavage of TDP-43 and fragment generation",
+      "TDP-43 in non-homologous end joining DNA repair XRCC4",
+      "TDP-43 TIA-1 alternative splicing regulation",
+      "TDP-43 function with Drosha microprocessor complex",
+      "TDP-43 and C9orf72 dipeptide repeats effect on nuclear transport",
+      "TDP-43 regulation of caspase-3 expression or activity",
+      "TDP-43 and Matrin-3 functional interaction RNA processing",
+      "TDP-43 and Profilin 1 (PFN1) effect on RNA binding",
+      "TDP-43 and Optineurin (OPTN) non-autophagy roles",
+      "TDP-43 and XRCC4 reciprocal regulation",
+      "TDP-43 and NEFL protein stability",
+      "TDP-43 and SFPQ paraspeckle function"
+    ],
+    "function_batches": [
+      "hnRNPA1",
+      "hnRNPA2/B1",
+      "FUS",
+      "Ataxin-2",
+      "TIA-1",
+      "G3BP1",
+      "SQSTM1/p62",
+      "VCP",
+      "UBQLN2",
+      "Parkin",
+      "Drosha",
+      "NEFL",
+      "TAF15",
+      "hnRNPC1/C2",
+      "ATG7",
+      "ATG4B",
+      "HDAC6",
+      "Importin-α",
+      "Exportin-1",
+      "Ran",
+      "Matrin-3",
+      "C9orf72-DPRs",
+      "RACK1",
+      "PABPC1",
+      "Angiogenin",
+      "Mitofusin 2",
+      "PHB2",
+      "VDAC1",
+      "SOD1",
+      "EWSR1",
+      "UPF1",
+      "PARP1",
+      "SFPQ",
+      "PTBP1",
+      "OPTN",
+      "TBK1",
+      "PFN1",
+      "Caspase-3",
+      "XRCC4"
+    ],
+    "function_history": {}
+  }
+}

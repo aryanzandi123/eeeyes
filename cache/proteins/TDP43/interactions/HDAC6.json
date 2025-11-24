@@ -1,0 +1,135 @@
+{
+  "primary": "HDAC6",
+  "interaction_type": "complex",
+  "upstream_interactor": "Parkin",
+  "mediator_chain": [
+    "Parkin"
+  ],
+  "depth": 2,
+  "support_summary": "Parkin-mediated ubiquitination of TDP-43 promotes its interaction with HDAC6, which links the protein to the dynein motor complex for transport and clearance. TDP-43 also regulates HDAC6 expression by binding its mRNA.",
+  "functions": [
+    {
+      "function": "HDAC6 mRNA Stability",
+      "arrow": "activates",
+      "cellular_process": "TDP-43 binds directly to HDAC6 mRNA and is necessary to maintain its physiological levels.",
+      "effect_description": "Loss of nuclear TDP-43 function (via silencing or mislocalization) leads to the downregulation of HDAC6 mRNA and protein. Conversely, TDP-43 overexpression can increase HDAC6 mRNA and protein levels.",
+      "biological_consequence": [
+        "Loss of nuclear TDP-43 → Decreased HDAC6 mRNA levels → Reduced HDAC6 protein → Impaired aggresome formation and autophagic clearance of misfolded proteins → Increased cytotoxicity"
+      ],
+      "specific_effects": [
+        "TDP-43 silencing results in HDAC6 downregulation and accumulation of its substrate, acetyl-tubulin.",
+        "This effect is dependent on TDP-43's RNA binding ability."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Knockdown of transactive response DNA-binding protein (TDP-43) downregulates histone deacetylase 6",
+          "year": 2010,
+          "pmid": "19910924"
+        },
+        {
+          "paper_title": "TDP-43 Controls HIV-1 Viral Production and Virus Infectiveness",
+          "year": 2021,
+          "pmid": "37108826"
+        }
+      ],
+      "_context": {
+        "type": "chain",
+        "query_protein": null,
+        "chain": [
+          "Parkin"
+        ]
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "19910924",
+        "37108826"
+      ],
+      "function_effect": "activation"
+    },
+    {
+      "function": "TDP-43 Aggregate Clearance",
+      "arrow": "activates",
+      "cellular_process": "HDAC6 is a key player in the clearance of misfolded proteins. It recognizes ubiquitinated protein aggregates and facilitates their transport along microtubules to form an aggresome, which is then cleared by autophagy.",
+      "effect_description": "HDAC6 overexpression reduces the levels of both soluble and insoluble TDP-43 and mitigates its cytoplasmic mislocalization. Parkin-ubiquitinated TDP-43 forms a complex with HDAC6 to facilitate this process.",
+      "biological_consequence": [
+        "Ubiquitinated TDP-43 aggregates → HDAC6 recognition → Dynein-mediated transport to aggresome → Autophagic clearance → Reduced TDP-43 pathology"
+      ],
+      "specific_effects": [
+        "Inhibition of HDAC6 can increase the accumulation of cytoplasmic TDP-43.",
+        "HDAC6 is part of a multi-protein complex with Parkin and ubiquitinated TDP-43."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Parkin ubiquitinates Tar-DNA binding protein-43 (TDP-43) and promotes its cytosolic accumulation via interaction with histone deacetylase 6 (HDAC6)",
+          "year": 2013,
+          "pmid": "23258539"
+        },
+        {
+          "paper_title": "The Role of HDAC6 in TDP-43-Induced Neurotoxicity and UPS Impairment",
+          "year": 2020,
+          "pmid": "33282865"
+        }
+      ],
+      "_context": {
+        "type": "chain",
+        "query_protein": null,
+        "chain": [
+          "Parkin"
+        ]
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "bidirectional",
+      "pmids": [
+        "23258539",
+        "33282865"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "TDP-43 binds directly to HDAC6 mRNA and is necessary to maintain its physiological levels. HDAC6 is a key player in the clearance of misfolded proteins. It recognizes ubiquitinated protein aggregates and facilitates their transport along microtubules to form an aggresome, which is then cleared by autophagy.",
+  "effect": "Loss of nuclear TDP-43 function (via silencing or mislocalization) leads to the downregulation of HDAC6 mRNA and protein. Conversely, TDP-43 overexpression can increase HDAC6 mRNA and protein levels.; HDAC6 overexpression reduces the levels of both soluble and insoluble TDP-43 and mitigates its cytoplasmic mislocalization. Parkin-ubiquitinated TDP-43 forms a complex with HDAC6 to facilitate this process.",
+  "summary": "TDP43 activates HDAC6 to regulate hdac6 mrna stability and tdp-43 aggregate clearance, ultimately affecting increased cytotoxicity.",
+  "evidence": [
+    {
+      "paper_title": "Knockdown of transactive response DNA-binding protein (TDP-43) downregulates histone deacetylase 6",
+      "year": 2010
+    },
+    {
+      "paper_title": "TDP-43 Controls HIV-1 Viral Production and Virus Infectiveness",
+      "year": 2021
+    },
+    {
+      "paper_title": "Parkin ubiquitinates Tar-DNA binding protein-43 (TDP-43) and promotes its cytosolic accumulation via interaction with histone deacetylase 6 (HDAC6)",
+      "year": 2013
+    },
+    {
+      "paper_title": "The Role of HDAC6 in TDP-43-Induced Neurotoxicity and UPS Impairment",
+      "year": 2020
+    }
+  ],
+  "_linked_mediator_interaction": "Parkin->HDAC6",
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 4
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 --regulates--> HDAC6:",
+  "protein_a": "TDP43",
+  "protein_b": "HDAC6",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.333664Z",
+  "last_updated": "2025-11-24T02:46:00.333664Z"
+}

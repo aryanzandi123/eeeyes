@@ -1,0 +1,95 @@
+{
+  "primary": "TDP43",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 2,
+  "support_summary": "TDP-43 functionally regulates autophagy by binding to and stabilizing Atg7 mRNA. Loss of TDP-43 leads to destabilization of Atg7 mRNA, reduced ATG7 protein levels, and impaired autophagy.",
+  "functions": [
+    {
+      "function": "ATG7 mRNA Stability",
+      "arrow": "activates",
+      "cellular_process": "TDP-43 binds directly to the mRNA of Atg7, a crucial E1-like activating enzyme for autophagy, through its RRM1 domain.",
+      "effect_description": "This binding stabilizes the Atg7 transcript, ensuring adequate levels of ATG7 protein are maintained for autophagic function. Loss of nuclear TDP-43 function leads to Atg7 mRNA destabilization and subsequent degradation.",
+      "biological_consequence": [
+        "Loss of nuclear TDP-43 → Destabilization of Atg7 mRNA → Reduced ATG7 protein levels → Impaired autophagosome formation → Defective autophagy and accumulation of protein aggregates"
+      ],
+      "specific_effects": [
+        "Depletion of TDP-43 down-regulates ATG7 at both the mRNA and protein levels.",
+        "The reduction in ATG7 levels upon TDP-43 loss leads to impaired autophagic flux."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Regulation of autophagy by neuropathological protein TDP-43",
+          "year": 2011,
+          "pmid": "22052911"
+        },
+        {
+          "paper_title": "Maintaining the balance of TDP-43, mitochondria, and autophagy: a promising therapeutic strategy for neurodegenerative diseases",
+          "year": 2020,
+          "pmid": "33126923"
+        }
+      ],
+      "_context": {
+        "type": "chain",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "22052911",
+        "33126923"
+      ],
+      "function_effect": "activation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "activates",
+        "net_from": "TDP43",
+        "net_arrow": "activates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "activates",
+      "direct_arrow": "activates",
+      "net_effect": "activation",
+      "direct_effect": "activation"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "_chain_inferred": true,
+  "mechanism": "TDP-43 binds directly to the mRNA of Atg7, a crucial E1-like activating enzyme for autophagy, through its RRM1 domain.",
+  "effect": "This binding stabilizes the Atg7 transcript, ensuring adequate levels of ATG7 protein are maintained for autophagic function. Loss of nuclear TDP-43 function leads to Atg7 mRNA destabilization and subsequent degradation.",
+  "summary": "TDP43 activates ATG7 to modulate atg7 mrna stability, ultimately affecting defective autophagy and accumulation of protein aggregates.",
+  "evidence": [
+    {
+      "paper_title": "Regulation of autophagy by neuropathological protein TDP-43",
+      "year": 2011
+    },
+    {
+      "paper_title": "Maintaining the balance of TDP-43, mitochondria, and autophagy: a promising therapeutic strategy for neurodegenerative diseases",
+      "year": 2020
+    }
+  ],
+  "interaction_effect": "activation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 0
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 --activates--> ATG7:",
+  "protein_a": "ATG7",
+  "protein_b": "TDP43",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.328730Z",
+  "last_updated": "2025-11-24T02:46:00.328730Z"
+}

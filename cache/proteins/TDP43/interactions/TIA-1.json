@@ -1,0 +1,104 @@
+{
+  "primary": "TIA-1",
+  "interaction_type": "indirect",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TDP-43 is recruited to stress granules and interacts with core components, including TIA-1. Depletion of TDP-43 disrupts the controlled aggregation of TIA-1.",
+  "functions": [
+    {
+      "function": "Stress Granule Assembly",
+      "arrow": "regulates",
+      "cellular_process": "TIA-1 is a primary nucleator of stress granules. TDP-43 interacts with TIA-1 and is recruited to these granules during the cellular stress response. TDP-43 is required for the proper secondary aggregation and maintenance of TIA-1-positive stress granules.",
+      "effect_description": "Depletion of TDP-43 disrupts the controlled aggregation of TIA-1, leading to delayed and altered stress granule formation. This highlights TDP-43's role in modulating the core machinery of the stress response.",
+      "biological_consequence": [
+        "Loss of TDP-43 → Disrupted TIA-1 aggregation → Delayed/abnormal stress granule assembly → Impaired cellular stress response → Increased cell vulnerability"
+      ],
+      "specific_effects": [
+        "TDP-43 knockdown has been shown to slow stress granule assembly.",
+        "Phospho-TDP-43 foci consistently colocalize with TIA-1 positive stress granules following acute stress."
+      ],
+      "evidence": [
+        {
+          "paper_title": "TAR DNA-binding protein 43 (TDP-43) regulates stress granule dynamics via differential regulation of G3BP and TIA-1",
+          "year": 2011,
+          "pmid": "21257637"
+        },
+        {
+          "paper_title": "TDP-43 Aggregation In Neurodegeneration: Are Stress Granules The Key?",
+          "year": 2011,
+          "pmid": "22405725"
+        },
+        {
+          "paper_title": "Stress Granule Assembly Can Facilitate but Is Not Required for TDP-43 Cytoplasmic Aggregation",
+          "year": 2021,
+          "pmid": "32992901"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "regulates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "21257637",
+        "22405725",
+        "32992901"
+      ],
+      "function_effect": "regulation",
+      "arrow_context": {
+        "direct_from": null,
+        "direct_arrow": "regulates",
+        "net_from": "TDP43",
+        "net_arrow": "regulates",
+        "mediator_chain": [],
+        "is_indirect": true
+      },
+      "net_arrow": "regulates",
+      "direct_arrow": "regulates",
+      "net_effect": "regulation",
+      "direct_effect": "regulation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "TIA-1 is a primary nucleator of stress granules. TDP-43 interacts with TIA-1 and is recruited to these granules during the cellular stress response. TDP-43 is required for the proper secondary aggregation and maintenance of TIA-1-positive stress granules.",
+  "effect": "Depletion of TDP-43 disrupts the controlled aggregation of TIA-1, leading to delayed and altered stress granule formation. This highlights TDP-43's role in modulating the core machinery of the stress response.",
+  "summary": "TDP43 activates TIA-1 to modulate stress granule assembly, ultimately affecting increased cell vulnerability.",
+  "evidence": [
+    {
+      "paper_title": "TAR DNA-binding protein 43 (TDP-43) regulates stress granule dynamics via differential regulation of G3BP and TIA-1",
+      "year": 2011
+    },
+    {
+      "paper_title": "TDP-43 Aggregation In Neurodegeneration: Are Stress Granules The Key?",
+      "year": 2011
+    },
+    {
+      "paper_title": "Stress Granule Assembly Can Facilitate but Is Not Required for TDP-43 Cytoplasmic Aggregation",
+      "year": 2021
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 --regulates--> TIA-1:",
+  "protein_a": "TDP43",
+  "protein_b": "TIA-1",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.303315Z",
+  "last_updated": "2025-11-24T02:46:00.303315Z"
+}

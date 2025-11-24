@@ -1,0 +1,82 @@
+{
+  "primary": "TDP43",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "The ribosomal protein RACK1 acts as a scaffold to recruit TDP-43 to polyribosomes. This interaction can lead to the repression of global protein synthesis when TDP-43 levels are elevated in the cytoplasm.",
+  "functions": [
+    {
+      "function": "Global Protein Synthesis",
+      "arrow": "inhibits",
+      "cellular_process": "TDP-43 interacts with the ribosomal protein RACK1, a scaffold on the 40S ribosomal subunit. This interaction allows TDP-43 to associate with polyribosomes.",
+      "effect_description": "When TDP-43 levels increase in the cytoplasm, its association with RACK1 on ribosomes leads to the repression of global protein synthesis. This suggests that cytoplasmic TDP-43 gains a toxic function as a general translational repressor.",
+      "biological_consequence": [
+        "Increased cytoplasmic TDP-43 → Binding to RACK1 on ribosomes → Repression of global translation → Impaired cellular homeostasis → Promotion of cytoplasmic inclusion formation"
+      ],
+      "specific_effects": [
+        "The interaction between TDP-43 and RACK1 mediates the binding of TDP-43 to the translational machinery.",
+        "Increased cytoplasmic TDP-43 represses global protein synthesis, an effect that can be rescued by RACK1 overexpression.",
+        "RACK1 co-localizes with TDP-43 in pathological inclusions in motor neurons of ALS patients.",
+        "Loss of ribosomal RACK1 reduces the formation of TDP-43 cytoplasmic inclusions."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Increased cytoplasmic TDP-43 reduces global protein synthesis by interacting with RACK1 on polyribosomes",
+          "year": 2017,
+          "pmid": "28158562"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "28158562"
+      ],
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "mechanism": "TDP-43 interacts with the ribosomal protein RACK1, a scaffold on the 40S ribosomal subunit. This interaction allows TDP-43 to associate with polyribosomes.",
+  "effect": "When TDP-43 levels increase in the cytoplasm, its association with RACK1 on ribosomes leads to the repression of global protein synthesis. This suggests that cytoplasmic TDP-43 gains a toxic function as a general translational repressor.",
+  "summary": "TDP43 inhibits RACK1 to modulate global protein synthesis, ultimately affecting promotion of cytoplasmic inclusion formation.",
+  "evidence": [
+    {
+      "paper_title": "Increased cytoplasmic TDP-43 reduces global protein synthesis by interacting with RACK1 on polyribosomes",
+      "year": 2017
+    },
+    {
+      "paper_title": "Targeting RACK1 to alleviate TDP-43 and FUS proteinopathy-mediated suppression of protein translation and neurodegeneration",
+      "year": 2021
+    },
+    {
+      "paper_title": "Dysregulation of Translation in TDP-43 Proteinopathies: Deficits in the RNA Supply Chain and Local Protein Production",
+      "year": 2022
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 1
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 --binds--> RACK1:",
+  "protein_a": "RACK1",
+  "protein_b": "TDP43",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.347181Z",
+  "last_updated": "2025-11-24T02:46:00.347181Z"
+}

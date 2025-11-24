@@ -1,0 +1,46 @@
+{
+  "primary": "HDAC6",
+  "arrow": "binds",
+  "functions": [
+    {
+      "function": "Parkin-HDAC6 Complex Formation and TDP-43 Regulation",
+      "arrow": "binds",
+      "cellular_process": "Parkin, an E3 ubiquitin ligase, directly binds to Histone Deacetylase 6 (HDAC6) through multiple interaction domains, forming a multiprotein complex. This complex is involved in the cellular trafficking and processing of ubiquitinated proteins. Specifically, in the context of TDP-43, this interaction facilitates the ubiquitination of TDP-43 and promotes its accumulation in the cytosol.",
+      "effect_description": "The direct interaction between Parkin and HDAC6 regulates the cellular localization and ubiquitination of TDP-43, thereby indirectly influencing HDAC6 mRNA stability by altering TDP-43's nuclear availability.",
+      "biological_consequence": [
+        "Parkin directly binds to HDAC6, forming a complex.",
+        "This Parkin-HDAC6 complex facilitates the ubiquitination and promotes the cytosolic accumulation of TDP-43.",
+        "The increased cytosolic localization of TDP-43 leads to reduced nuclear TDP-43.",
+        "As nuclear TDP-43 is necessary for HDAC6 mRNA stability, its reduced nuclear presence leads to decreased HDAC6 mRNA stability."
+      ],
+      "specific_effects": [
+        "Direct binding of Parkin to HDAC6 through multiple interaction domains.",
+        "Formation of a multiprotein complex involving Parkin, HDAC6, and TDP-43.",
+        "Ubiquitination of TDP-43 by Parkin, facilitated by HDAC6.",
+        "Promotion of TDP-43 cytosolic accumulation.",
+        "Mediation of Parkin's reversible recruitment to the centrosome in response to proteasome inhibition.",
+        "Recruitment of HDAC6 to ubiquitinated mitochondria for mitophagy."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Parkin ubiquitinates Tar-DNA binding protein-43 (TDP-43) and promotes its cytosolic accumulation via interaction with histone deacetylase 6 (HDAC6)",
+          "year": 2013
+        },
+        {
+          "paper_title": "Direct Binding with Histone Deacetylase 6 Mediates the Reversible Recruitment of Parkin to the Centrosome",
+          "year": 2008
+        },
+        {
+          "paper_title": "Disease-causing mutations in Parkin impair mitochondrial ubiquitination, aggregation, and HDAC6-dependent mitophagy",
+          "year": 2010
+        }
+      ]
+    }
+  ],
+  "interaction_type": "direct",
+  "discovered_in_query": "TDP43",
+  "protein_a": "Parkin",
+  "protein_b": "HDAC6",
+  "first_discovered": "2025-11-24T02:39:01.331697Z",
+  "last_updated": "2025-11-24T02:39:01.331697Z"
+}

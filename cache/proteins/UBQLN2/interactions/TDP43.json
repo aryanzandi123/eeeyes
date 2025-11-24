@@ -1,0 +1,93 @@
+{
+  "primary": "TDP43",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TDP-43 aggregates are decorated with degradation adaptor proteins, and TDP-43 aggregation is a central feature in ALS cases caused by UBQLN2 mutations.",
+  "functions": [
+    {
+      "function": "TDP-43 Protein Clearance",
+      "arrow": "activates",
+      "cellular_process": "UBQLN2 is a shuttle protein that can deliver ubiquitinated substrates to both the proteasome and the autophagy pathway. It binds directly to the C-terminal region of TDP-43.",
+      "effect_description": "Overexpression of UBQLN2 enhances the clearance of both full-length TDP-43 and its aggregation-prone C-terminal fragments, thereby reducing their cellular levels.",
+      "biological_consequence": [
+        "TDP-43 aggregation → UBQLN2 binding → Delivery to proteasome/autophagy pathways → Enhanced TDP-43 degradation → Reduced TDP-43 toxicity"
+      ],
+      "specific_effects": [
+        "Mutations in UBQLN2 are linked to X-linked ALS-FTD and result in TDP-43 pathology.",
+        "UBQLN2 co-localizes with TDP-43 aggregates in patient neurons.",
+        "Overexpression of UBQLN2 can dramatically lower the levels of overexpressed TDP-43 and its fragments in cell models."
+      ],
+      "evidence": [
+        {
+          "paper_title": "Ubiquilin-2 (UBQLN2) binds with high affinity to the C-terminal region of TDP-43 and modulates TDP-43 levels in H4 cells: characterization of inhibition by nucleic acids and 4-aminoquinolines",
+          "year": 2013,
+          "pmid": "23541532"
+        },
+        {
+          "paper_title": "Differential roles of the ubiquitin proteasome system and autophagy in the clearance of soluble and aggregated TDP-43 species",
+          "year": 2014,
+          "pmid": "24424030"
+        },
+        {
+          "paper_title": "Human Ubiquilin 2 and TDP-43 copathology drives neurodegeneration in transgenic Caenorhabditis elegans",
+          "year": 2017,
+          "pmid": "33963840"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "23541532",
+        "24424030",
+        "33963840"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "binds",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "UBQLN2 is a shuttle protein that can deliver ubiquitinated substrates to both the proteasome and the autophagy pathway. It binds directly to the C-terminal region of TDP-43.",
+  "effect": "Overexpression of UBQLN2 enhances the clearance of both full-length TDP-43 and its aggregation-prone C-terminal fragments, thereby reducing their cellular levels.",
+  "summary": "TDP43 activates UBQLN2 to modulate tdp-43 protein clearance, ultimately affecting reduced tdp-43 toxicity.",
+  "evidence": [
+    {
+      "paper_title": "Ubiquilin-2 (UBQLN2) binds with high affinity to the C-terminal region of TDP-43 and modulates TDP-43 levels in H4 cells: characterization of inhibition by nucleic acids and 4-aminoquinolines",
+      "year": 2013
+    },
+    {
+      "paper_title": "Differential roles of the ubiquitin proteasome system and autophagy in the clearance of soluble and aggregated TDP-43 species",
+      "year": 2014
+    },
+    {
+      "paper_title": "Human Ubiquilin 2 and TDP-43 copathology drives neurodegeneration in transgenic Caenorhabditis elegans",
+      "year": 2017
+    }
+  ],
+  "interaction_effect": "binding",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 3
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 <--binds-- UBQLN2:",
+  "protein_a": "UBQLN2",
+  "protein_b": "TDP43",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.313472Z",
+  "last_updated": "2025-11-24T02:46:00.313472Z"
+}

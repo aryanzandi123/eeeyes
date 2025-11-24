@@ -1,0 +1,80 @@
+{
+  "primary": "TDP43",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "Matrin-3 (MATR3), another RNA-binding protein linked to ALS, interacts with TDP-43 in an RNA-dependent manner, and the two proteins co-localize in cytoplasmic inclusions.",
+  "functions": [
+    {
+      "function": "TDP-43 mRNA Nuclear Export",
+      "arrow": "activates",
+      "cellular_process": "Matrin-3 is a component of the Transcription and Export (TREX) complex, which is involved in mRNA biogenesis and nuclear export.",
+      "effect_description": "ALS-associated mutations in Matrin-3 (e.g., S85C, T622A) cause defects in the nuclear export of specific mRNAs, including TDP-43 mRNA. This leads to the retention of TDP-43 transcripts in the nucleus.",
+      "biological_consequence": [
+        "Mutant Matrin-3 → Impaired TREX complex function → Nuclear retention of TDP-43 mRNA → Altered TDP-43 protein homeostasis → Contribution to ALS pathology"
+      ],
+      "specific_effects": [
+        "Expression of mutant Matrin-3 increases the nuclear-to-cytoplasmic ratio of TDP-43 mRNA."
+      ],
+      "evidence": [
+        {
+          "paper_title": "ALS Associated Mutations in Matrin 3 Alter Protein-Protein Interactions and Impede mRNA Nuclear Export",
+          "year": 2017,
+          "pmid": "29109432"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "primary_to_main",
+      "pmids": [
+        "29109432"
+      ],
+      "function_effect": "activation"
+    }
+  ],
+  "arrow": "regulates",
+  "direction": "bidirectional",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates",
+      "inhibits"
+    ]
+  },
+  "mechanism": "TDP-43 and Matrin-3 are both nuclear RNA-binding proteins that interact in an RNA-dependent manner and co-regulate the splicing and stability of target mRNAs. Matrin-3 is a component of the Transcription and Export (TREX) complex, which is involved in mRNA biogenesis and nuclear export.",
+  "effect": "The interaction between TDP-43 and Matrin-3 suggests they are part of a larger ribonucleoprotein complex that coordinates various aspects of RNA metabolism. Dysfunction of either protein can lead to overlapping pathological features seen in ALS.; ALS-associated mutations in Matrin-3 (e.g., S85C, T622A) cause defects in the nuclear export of specific mRNAs, including TDP-43 mRNA. This leads to the retention of TDP-43 transcripts in the nucleus.",
+  "summary": "TDP43 regulates Matrin-3 to regulate rna processing and tdp-43 mrna nuclear export, ultimately affecting neuronal homeostasis.",
+  "evidence": [
+    {
+      "paper_title": "Matrin 3 and TDP-43 function together to regulate neuroblastoma differentiation",
+      "year": 2020
+    },
+    {
+      "paper_title": "Matrin 3-dependent RNA granules are associated with ALS-linked proteins in neuronal cells",
+      "year": 2020
+    },
+    {
+      "paper_title": "ALS Associated Mutations in Matrin 3 Alter Protein-Protein Interactions and Impede mRNA Nuclear Export",
+      "year": 2017
+    }
+  ],
+  "interaction_effect": "regulation",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 <--regulates--> Matrin-3:",
+  "protein_a": "Matrin-3",
+  "protein_b": "TDP43",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.341597Z",
+  "last_updated": "2025-11-24T02:46:00.341597Z"
+}

@@ -1,0 +1,93 @@
+{
+  "primary": "VDAC1",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TDP-43 interacts with the Voltage-gated anion channel 1 (VDAC1), a protein on the outer mitochondrial membrane that is involved in mitophagy.",
+  "functions": [
+    {
+      "function": "Mitochondrial Integrity",
+      "arrow": "inhibits",
+      "cellular_process": "TDP-43 interacts with Voltage-gated anion channel 1 (VDAC1), a protein on the outer mitochondrial membrane that regulates the passage of ions and metabolites and is involved in apoptosis and mitophagy.",
+      "effect_description": "In disease states, mislocalized cytoplasmic TDP-43 interacts with VDAC1. This interaction is linked to mitochondrial dysfunction, including the aberrant release of mitochondrial DNA (mtDNA) into the cytosol, which can trigger an inflammatory response.",
+      "biological_consequence": [
+        "Cytoplasmic TDP-43 → Interaction with VDAC1 → VDAC1 oligomerization / mPTP opening → Release of mtDNA into cytosol → cGAS-STING pathway activation → Pro-inflammatory gene expression → Cell death"
+      ],
+      "specific_effects": [
+        "TDP-43 was found to interact with VDAC1 in proteomics screens.",
+        "In TDP-43 related ALS, mislocalized TDP-43 interacts with VDAC1, resulting in aberrant mtDNA release to the cytosol.",
+        "Inhibition of VDAC1 oligomerization can prevent the cytosolic accumulation of mtDNA and inflammation in ALS patient-derived motor neurons."
+      ],
+      "evidence": [
+        {
+          "paper_title": "VDAC1: A Key Player in the Mitochondrial Landscape of Neurodegeneration",
+          "year": 2024,
+          "pmid": "39858428"
+        },
+        {
+          "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+          "year": 2018,
+          "pmid": "29715546"
+        },
+        {
+          "paper_title": "Mitochondrion-Dependent Cell Death in TDP-43 Proteinopathies",
+          "year": 2021,
+          "pmid": "33918437"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "inhibits",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "39858428",
+        "29715546",
+        "33918437"
+      ],
+      "function_effect": "inhibition"
+    }
+  ],
+  "arrow": "activates",
+  "direction": "main_to_primary",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "inhibits"
+    ]
+  },
+  "mechanism": "TDP-43 interacts with Voltage-gated anion channel 1 (VDAC1), a protein on the outer mitochondrial membrane that regulates the passage of ions and metabolites and is involved in apoptosis and mitophagy.",
+  "effect": "In disease states, mislocalized cytoplasmic TDP-43 interacts with VDAC1. This interaction is linked to mitochondrial dysfunction, including the aberrant release of mitochondrial DNA (mtDNA) into the cytosol, which can trigger an inflammatory response.",
+  "summary": "TDP43 inhibits VDAC1 to modulate mitochondrial integrity, ultimately affecting cell death.",
+  "evidence": [
+    {
+      "paper_title": "VDAC1: A Key Player in the Mitochondrial Landscape of Neurodegeneration",
+      "year": 2024
+    },
+    {
+      "paper_title": "TDP-43 interacts with mitochondrial proteins critical for mitophagy and mitochondrial dynamics",
+      "year": 2018
+    },
+    {
+      "paper_title": "Mitochondrion-Dependent Cell Death in TDP-43 Proteinopathies",
+      "year": 2021
+    }
+  ],
+  "interaction_effect": "activates",
+  "_validation_metadata": {
+    "validated": true,
+    "validator": "arrow_effect_validator",
+    "corrections_applied": 2
+  },
+  "_arrow_validated": true,
+  "arrow_notation": "TDP43 --activates--> VDAC1:",
+  "protein_a": "TDP43",
+  "protein_b": "VDAC1",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.357513Z",
+  "last_updated": "2025-11-24T02:46:00.357513Z"
+}

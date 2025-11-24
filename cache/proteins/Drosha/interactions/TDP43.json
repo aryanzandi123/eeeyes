@@ -1,0 +1,109 @@
+{
+  "primary": "TDP43",
+  "interaction_type": "direct",
+  "upstream_interactor": null,
+  "mediator_chain": [],
+  "depth": 1,
+  "support_summary": "TDP-43 is found in a complex with the RNase III enzyme Drosha, indicating a direct role in the processing of microRNAs.",
+  "functions": [
+    {
+      "function": "microRNA Biogenesis",
+      "arrow": "activates",
+      "cellular_process": "TDP-43 is a component of the nuclear Drosha/DGCR8 microprocessor complex. It facilitates the cleavage of primary microRNAs (pri-miRNAs) into precursor miRNAs (pre-miRNAs).",
+      "effect_description": "TDP-43 enhances the processing of a subset of pri-miRNAs by binding directly to them and facilitating the binding of the Drosha complex, thus promoting their maturation.",
+      "biological_consequence": [
+        "TDP-43 associates with Drosha complex → Enhanced binding to specific pri-miRNAs → Efficient cleavage into pre-miRNAs → Altered expression of mature miRNAs → Dysregulation of target gene expression"
+      ],
+      "specific_effects": [
+        "TDP-43 interacts with the Drosha complex in both an RNA-dependent and -independent manner.",
+        "Loss of TDP-43 function can lead to altered expression levels of specific miRNAs, which is important for processes like neuronal outgrowth."
+      ],
+      "evidence": [
+        {
+          "paper_title": "TDP-43 promotes microRNA biogenesis as a component of the Drosha and Dicer complexes",
+          "year": 2012,
+          "pmid": "22323604"
+        },
+        {
+          "paper_title": "Emerging roles of DROSHA beyond primary microRNA processing",
+          "year": 2017,
+          "pmid": "29171328"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "22323604",
+        "29171328"
+      ]
+    },
+    {
+      "function": "Drosha Protein Stability",
+      "arrow": "activates",
+      "cellular_process": "TDP-43 interacts with the Drosha protein and is required to maintain its stability, particularly during neuronal differentiation.",
+      "effect_description": "Loss of nuclear TDP-43 function leads to the destabilization and degradation of Drosha. This reduces the overall levels of the microprocessor complex, thereby impairing global microRNA biogenesis.",
+      "biological_consequence": [
+        "Loss of TDP-43 → Drosha protein instability → Reduced microprocessor complex levels → Impaired global miRNA production → Dysregulation of neurogenesis"
+      ],
+      "specific_effects": [
+        "TDP-43 is required for the Drosha-mediated regulation of Neurogenin 2, a master gene for neurogenesis.",
+        "By regulating the abundance of the Drosha complex, TDP-43 controls the entire miRNA repertoire in differentiating neurons."
+      ],
+      "evidence": [
+        {
+          "paper_title": "TDP-43 regulates the Microprocessor complex activity during in vitro neuronal differentiation",
+          "year": 2013,
+          "pmid": "24113842"
+        }
+      ],
+      "_context": {
+        "type": "direct",
+        "query_protein": null,
+        "chain": null
+      },
+      "interaction_effect": "activates",
+      "direction": "main_to_primary",
+      "interaction_direction": "main_to_primary",
+      "pmids": [
+        "24113842"
+      ]
+    }
+  ],
+  "arrow": "activates",
+  "direction": "primary_to_main",
+  "intent": "regulation",
+  "arrows": {
+    "main_to_primary": [
+      "activates"
+    ]
+  },
+  "mechanism": "TDP-43 is a component of the nuclear Drosha/DGCR8 microprocessor complex. It facilitates the cleavage of primary microRNAs (pri-miRNAs) into precursor miRNAs (pre-miRNAs). TDP-43 interacts with the Drosha protein and is required to maintain its stability, particularly during neuronal differentiation.",
+  "effect": "TDP-43 enhances the processing of a subset of pri-miRNAs by binding directly to them and facilitating the binding of the Drosha complex, thus promoting their maturation.; Loss of nuclear TDP-43 function leads to the destabilization and degradation of Drosha. This reduces the overall levels of the microprocessor complex, thereby impairing global microRNA biogenesis.",
+  "summary": "TDP43 activates Drosha to regulate microrna biogenesis and drosha protein stability, ultimately affecting dysregulation of target gene expression.",
+  "evidence": [
+    {
+      "paper_title": "TDP-43 promotes microRNA biogenesis as a component of the Drosha and Dicer complexes",
+      "year": 2012
+    },
+    {
+      "paper_title": "Emerging roles of DROSHA beyond primary microRNA processing",
+      "year": 2017
+    },
+    {
+      "paper_title": "TDP-43 regulates the Microprocessor complex activity during in vitro neuronal differentiation",
+      "year": 2013
+    }
+  ],
+  "arrow_notation": "TDP43 --activates--> Drosha:",
+  "protein_a": "Drosha",
+  "protein_b": "TDP43",
+  "discovered_in_query": "TDP43",
+  "first_discovered": "2025-11-24T02:46:00.317780Z",
+  "last_updated": "2025-11-24T02:46:00.317780Z"
+}
