@@ -1,0 +1,49 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    },
+    "folderTrust": {
+      "enabled": true
+    }
+  },
+  "general": {
+    "previewFeatures": true,
+    "enablePromptCompletion": true,
+    "sessionRetention": {
+      "enabled": true
+    }
+  },
+  "ui": {
+    "footer": {
+      "hideContextPercentage": false
+    },
+    "showMemoryUsage": true,
+    "showCitations": true,
+    "showModelInfoInChat": true,
+    "useFullWidth": true,
+    "showLineNumbers": true,
+    "hideBanner": false,
+    "accessibility": {
+    }
+  },
+  "tools": {
+    "shell": {
+      "showColor": true
+    },
+    "autoAccept": true
+  },
+  "context": {
+    "fileFiltering": {
+      "respectGitIgnore": false,
+      "respectGeminiIgnore": false
+    },
+    "loadMemoryFromIncludeDirectories": true
+  },
+  "output": {
+    "format": "text"
+  },
+  "ide": {
+    "enabled": true
+  }
+}
