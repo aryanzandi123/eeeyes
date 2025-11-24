@@ -476,7 +476,7 @@ PIPELINE_STEPS: list[StepConfig] = [
     StepConfig(
         name="step1a_discover",
         model="gemini-2.5-pro",
-        deep_research=False,
+        deep_research=True,
         reasoning_effort="high",
         use_google_search=True,
         thinking_budget=None,
@@ -831,7 +831,7 @@ PIPELINE_STEPS: list[StepConfig] = [
     StepConfig(
         name="step2a_functions",
         model="gemini-2.5-pro",
-        deep_research=False,
+        deep_research=True,
         reasoning_effort="high",
         use_google_search=True,
         thinking_budget=None,
@@ -992,7 +992,7 @@ PIPELINE_STEPS: list[StepConfig] = [
     StepConfig(
         name="step2a3_functions_exhaustive",
         model="gemini-2.5-pro",
-        deep_research=False,
+        deep_research=True,
         reasoning_effort="high",
         use_google_search=True,
         thinking_budget=None,
@@ -1160,7 +1160,7 @@ PIPELINE_STEPS: list[StepConfig] = [
     StepConfig(
         name="step2b2_indirect_functions",
         model="gemini-2.5-pro",
-        deep_research=False,
+        deep_research=True,
         reasoning_effort="high",
         use_google_search=True,
         thinking_budget=None,

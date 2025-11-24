@@ -75,7 +75,7 @@ def call_gemini_chain_link(
         print(f"    Requesting chain analysis from Gemini 3.0 Pro...")
 
     # Model priority: 3.0 Pro Preview -> Flash Thinking
-    models_to_try = ["gemini-3.0-pro-preview", "gemini-2.0-flash-thinking-exp-01-21"]
+    models_to_try = ["gemini-2.5-pro"]
 
     for model_name in models_to_try:
         try:
@@ -159,26 +159,30 @@ You are analyzing a protein interaction chain: {main_protein} -> {mediator_name}
 The user is querying {main_protein}.
 We found that {target_name} is an INDIRECT interactor, mediated by {mediator_name}.
 
-Your task is to describe the SPECIFIC direct interaction between {mediator_name} (Mediator) and {target_name} (Target), BUT primarily focusing on how this interaction enables the biological effect observed in the full chain ({main_protein} context).
+Your task is to describe the SPECIFIC MOLECULAR MECHANISM by which {mediator_name} (Mediator) acts on {target_name} (Target), explicitly detailing how this enables the biological effect of the full chain ({main_protein} context).
 
 Context of the chain:
 {context_description}
 
+RIGOROUS REQUIREMENTS:
+1. **Mechanism**: Do not just say "regulates". Specify *how* (e.g., "recruits to promoter", "phosphorylates at Ser45", "ubiquitinates for degradation").
+2. **Causality**: Explain why {mediator_name} is NECESSARY for {main_protein}'s effect on {target_name}.
+3. **Direction**: Determine if {mediator_name} activates or inhibits {target_name}.
+4. **Red Flags**: Avoid generic terms like "is associated with". We need physical or functional causality.
+
 Please research and generate a structured function entry for the interaction:
 {mediator_name} -> {target_name}
 
-The function name should describe the specific molecular event between {mediator_name} and {target_name}.
-The "biological_consequence" should explicitly show the flow from {mediator_name} to {target_name} and the outcome.
-
 Return ONLY valid JSON in this format:
 {{
-  "function": "Specific Function Name",
+  "function": "Specific Molecular Mechanism (e.g. 'Mediator Recruitment to Promoter')",
   "arrow": "activates|inhibits|binds",
-  "cellular_process": "Detailed description of how {mediator_name} interacts with {target_name}...",
-  "effect_description": "Brief summary of the effect.",
+  "cellular_process": "Detailed description of how {mediator_name} physically or functionally interacts with {target_name} to execute the chain's effect...",
+  "effect_description": "One sentence summary of the net effect.",
   "biological_consequence": [
-    "{mediator_name} does X to {target_name}",
-    "Subsequent effect..."
+    "Step 1: {main_protein} activates {mediator_name}...",
+    "Step 2: {mediator_name} binds/modifies {target_name}...",
+    "Step 3: {target_name} executes downstream function..."
   ],
   "specific_effects": ["Effect 1", "Effect 2"],
   "evidence": [

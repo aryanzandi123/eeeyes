@@ -11,21 +11,22 @@
     "previewFeatures": true,
     "enablePromptCompletion": true,
     "sessionRetention": {
-      "enabled": true
-    }
+      "enabled": false
+    },
+    "debugKeystrokeLogging": true
   },
   "ui": {
     "footer": {
       "hideContextPercentage": false
     },
     "showMemoryUsage": true,
-    "showCitations": true,
+    "showCitations": false,
     "showModelInfoInChat": true,
     "useFullWidth": true,
     "showLineNumbers": true,
     "hideBanner": false,
-    "accessibility": {
-    }
+    "accessibility": {},
+    "incrementalRendering": false
   },
   "tools": {
     "shell": {
@@ -45,5 +46,26 @@
   },
   "ide": {
     "enabled": true
+  },
+  "mcpServers": {
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "ide-assistant",
+        "--project",
+        "."
+      ],
+      "type": "stdio"
+    }
+  },
+  "experimental": {
+    "codebaseInvestigatorSettings": {
+      "maxNumTurns": 25
+    }
   }
 }

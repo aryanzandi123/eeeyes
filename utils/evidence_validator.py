@@ -89,7 +89,7 @@ def call_gemini_with_search(
         ),
         tools=[types.Tool(google_search=types.GoogleSearch())],
         max_output_tokens=MAX_OUTPUT_TOKENS,
-        temperature=0.2,
+        temperature=0.3,
         top_p=0.90,
     )
 
@@ -101,7 +101,7 @@ def call_gemini_with_search(
 
     # Model selection: Prioritize 3.0 Pro Preview as requested
     # Fallback to Flash Thinking if 3.0 is unavailable
-    models_to_try = ["gemini-3.0-pro-preview", "gemini-2.0-flash-thinking-exp-01-21"]
+    models_to_try = ["gemini-2.5-pro"]
 
     for model_name in models_to_try:
         for attempt in range(1, max_retries + 1):
@@ -206,12 +206,15 @@ MANDATORY INSTRUCTIONS:
    - **Mechanism Mismatch**: If claim says "stabilizes" but papers say "degrades" -> MARK CORRECTED.
 
 OUTPUT FORMAT:
-Return a JSON object with the exact same structure as the input 'interactors' list, but with updated fields:
+Return a SINGLE JSON LIST wrapped in a markdown code block (```json ... ```).
+The list must contain the exact same number of objects as the input, preserving the structure but with updated fields.
 - Add 'validity': 'TRUE' | 'CORRECTED' | 'FALSE' | 'DELETED'
 - Add 'validation_note': Explanation of findings.
 - Update 'functions' list:
   - Modify function/arrow/process fields if CORRECTED.
   - Ensure 'evidence' array contains REAL papers.
+
+Do not include any text outside the JSON code block.
 
 {batch_json}
 """

@@ -1269,23 +1269,49 @@ function showAggregatedInteractionsModal(nodeLinks, clickedNode) {
     if (sectionType === 'shared') {
       typeBadgeHTML = '<span class="mechanism-badge" style="background: #9333ea; color: white;">SHARED</span>';
     } else if (sectionType === 'indirect') {
-      // Build full chain path display for INDIRECT label
-      // Try to extract chain from first function with chain context
-      let chainDisplay = '';
+      // Build rich chain flow visualization
+      let mediator = L.upstream_interactor;
+      
+      // Try to extract chain from first function if upstream_interactor is missing
       const functions = L.functions || [];
-      const firstChainFunc = functions.find(f => f._context && f._context.type === 'chain' && f._context.chain);
-      if (firstChainFunc && firstChainFunc._context.chain) {
-        chainDisplay = buildFullChainPath(SNAP.main, firstChainFunc._context.chain, L);
+      if (!mediator) {
+          const firstChainFunc = functions.find(f => f._context && f._context.type === 'chain' && f._context.chain);
+          if (firstChainFunc && firstChainFunc._context.chain && firstChainFunc._context.chain.length > 0) {
+              // Use the last intermediate as the mediator for display
+              mediator = firstChainFunc._context.chain[firstChainFunc._context.chain.length - 1];
+          }
       }
 
-      // Fallback: use upstream_interactor if no chain found
-      if (!chainDisplay && L.upstream_interactor) {
-        chainDisplay = `${escapeHtml(SNAP.main)} → ${escapeHtml(L.upstream_interactor)} → ${escapeHtml(L.primary)}`;
+      if (mediator) {
+        // RICH CHAIN VISUALIZATION
+        // Layout: [Query] -> [Mediator] -> [Target]
+        typeBadgeHTML = `
+          <div class="chain-flow-visual" style="display: flex; align-items: center; gap: 8px; font-size: 12px;">
+            <span class="chain-node" style="font-weight: 600; color: #374151;">${escapeHtml(SNAP.main)}</span>
+            <span class="chain-arrow" style="color: #9ca3af;">→</span>
+            <span class="chain-mediator-badge" style="
+                background: #fffbeb; 
+                color: #b45309; 
+                border: 1px solid #fcd34d; 
+                padding: 2px 8px; 
+                border-radius: 12px; 
+                font-weight: 600;
+                font-size: 11px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+            ">
+                <span style="opacity:0.7; font-size:10px;">via</span>
+                ${escapeHtml(mediator)}
+            </span>
+            <span class="chain-arrow" style="color: #9ca3af;">→</span>
+            <span class="chain-node" style="font-weight: 600; color: #374151;">${escapeHtml(L.primary)}</span>
+          </div>
+        `;
+      } else {
+        // Fallback badge
+        typeBadgeHTML = `<span class="mechanism-badge" style="background: #f59e0b; color: white;">INDIRECT</span>`;
       }
-
-      typeBadgeHTML = chainDisplay
-        ? `<span class="mechanism-badge" style="background: #f59e0b; color: white;">${chainDisplay}</span>`
-        : `<span class="mechanism-badge" style="background: #f59e0b; color: white;">INDIRECT</span>`;
     } else {
       typeBadgeHTML = '<span class="mechanism-badge" style="background: #10b981; color: white;">DIRECT</span>';
     }
@@ -1698,32 +1724,59 @@ function showFunctionModal({ fn, interactor, affected, label, linkArrow }){
 
   // Format biological cascade - NORMALIZED VERTICAL FLOWCHART
   const createCascadeHTML = (value) => {
-    const segments = Array.isArray(value) ? value : (value ? [value] : []);
-    if (segments.length === 0) {
-      return '<div class="expanded-empty">Cascading biological effects not specified</div>';
+    let rawSegments = Array.isArray(value) ? value : (value ? [value] : []);
+
+    // Pre-process: If we have a single string containing newlines, split it
+    if (rawSegments.length === 1 && typeof rawSegments[0] === 'string' && rawSegments[0].includes('\n')) {
+      rawSegments = rawSegments[0].split('\n').map(s => s.trim()).filter(s => s.length > 0);
     }
 
-    // Normalize: flatten all segments and split by arrow (→)
-    const allSteps = [];
-    segments.forEach(segment => {
+    const validCascades = [];
+
+    rawSegments.forEach(segment => {
       const text = (segment == null ? '' : segment).toString().trim();
       if (!text) return;
 
-      // Split by arrow and clean each step
-      const steps = text.split('→').map(s => s.trim()).filter(s => s.length > 0);
-      allSteps.push(...steps);
+      // Extract potential label (e.g., "Scenario 1:", "Pathway A:")
+      let label = '';
+      let content = text;
+      const labelMatch = content.match(/^((?:Scenario|Pathway|Option) \d+|[A-Za-z ]+):/i);
+      if (labelMatch && labelMatch[0].length < 30) { // Limit length to avoid false positives on long sentences
+        label = labelMatch[0];
+        content = content.substring(label.length).trim();
+      }
+
+      // Split by arrow (handle unicode → and ascii ->)
+      // We use a regex that splits by either → or ->
+      const steps = content.split(/→|->/).map(s => s.trim()).filter(s => s.length > 0);
+      
+      if (steps.length > 0) {
+        validCascades.push({ label, steps });
+      }
     });
 
-    if (allSteps.length === 0) {
+    if (validCascades.length === 0) {
       return '<div class="expanded-empty">Cascading biological effects not specified</div>';
     }
 
-    // Create vertical flowchart blocks
-    const items = allSteps.map(step =>
-      `<div class="cascade-flow-item">${escapeHtml(step)}</div>`
-    ).join('');
+    // Render each cascade block
+    const cascadeBlocks = validCascades.map((cascade, index) => {
+        const stepsHTML = cascade.steps.map(step => 
+            `<div class="cascade-flow-item">${escapeHtml(step)}</div>`
+        ).join('');
+        
+        // Use explicit label if found, otherwise default to "Scenario X" only if multiple scenarios exist
+        let labelHTML = '';
+        if (cascade.label) {
+            labelHTML = `<div class="cascade-scenario-label" style="font-weight:bold; margin-bottom:8px; color:#6b7280; font-size:0.85em; text-transform:uppercase; letter-spacing:0.05em;">${escapeHtml(cascade.label.replace(/:$/, ''))}</div>`;
+        } else if (validCascades.length > 1) {
+             labelHTML = `<div class="cascade-scenario-label" style="font-weight:bold; margin-bottom:8px; color:#6b7280; font-size:0.85em; text-transform:uppercase; letter-spacing:0.05em;">Scenario ${index + 1}</div>`;
+        }
+        
+        return `<div class="cascade-flow-container" style="margin-bottom: 16px;">${labelHTML}${stepsHTML}</div>`;
+    }).join('<div class="cascade-separator" style="height:1px; background:#e5e7eb; margin: 12px 0;"></div>');
 
-    return `<div class="cascade-wrapper"><div class="cascade-flow-container">${items}</div></div>`;
+    return `<div class="cascade-wrapper">${cascadeBlocks}</div>`;
   };
   const biologicalConsequenceHTML = createCascadeHTML(fn.biological_consequence);
 

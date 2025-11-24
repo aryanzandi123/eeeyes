@@ -36,8 +36,8 @@ def call_gemini_flash(prompt: str, api_key: str) -> str:
         model="gemini-2.5-pro",
         contents=prompt,
         config=types.GenerateContentConfig(
-            temperature=0.1,  # Low temperature for consistency
-            max_output_tokens=8000,
+            temperature=0.2,  # Low temperature for consistency
+            max_output_tokens=12000,
         )
     )
 
